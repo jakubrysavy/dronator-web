@@ -366,7 +366,7 @@
         const language = window.DRONATOR_LANGUAGE;
         if (!Array.isArray(videos) || !Array.isArray(shorts)) throw new Error('Video data is missing');
 
-        const videoCards = videos.slice(0, 9).map((video, index) => createVideoCard(video, index, language)).filter(Boolean);
+        const videoCards = videos.slice(0, 15).map((video, index) => createVideoCard(video, index, language)).filter(Boolean);
         const shortCards = shorts.slice(0, 9).map((video, index) => createVideoCard(video, index, language, true)).filter(Boolean);
         if (!videoCards.length || !shortCards.length) throw new Error('A video list is empty');
 

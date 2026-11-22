@@ -14,7 +14,8 @@ CHANNEL_ID = "UC_YdeYtoEHdiNy2lpI6jJqw"
 FEED_URL = f"https://www.youtube.com/feeds/videos.xml?channel_id={CHANNEL_ID}"
 OUTPUT_PATH = Path(__file__).resolve().parents[1] / "videos.js"
 CHANNEL_HANDLE = "Dronatorcz"
-VIDEO_LIMIT = 9
+VIDEO_LIMIT = 15
+SHORT_LIMIT = 9
 LANGUAGES = ("en", "cs", "pl", "de", "es", "ru")
 LANGUAGE_REGIONS = {"en": "US", "cs": "CZ", "pl": "PL", "de": "DE", "es": "ES", "ru": "RU"}
 VIDEO_METADATA_CACHE = {}
@@ -145,6 +146,7 @@ for entry in feed.iter():
 
 
 def get_channel_tab(tab, language):
+    limit = VIDEO_LIMIT if tab == "videos" else SHORT_LIMIT
     url = f"https://www.youtube.com/@{CHANNEL_HANDLE}/{tab}"
     command = [
         sys.executable,
@@ -154,7 +156,7 @@ def get_channel_tab(tab, language):
         "--dump-single-json",
         "--skip-download",
         "--playlist-end",
-        str(VIDEO_LIMIT),
+        str(limit),
         "--no-warnings",
         "--extractor-args",
         f"youtube:lang={language}",
@@ -195,7 +197,7 @@ def get_channel_tab(tab, language):
             "description": item.get("description") or video.get("description") or "",
             "published": published,
         })
-        if len(entries) == VIDEO_LIMIT:
+        if len(entries) == limit:
             break
 
     if not entries:
