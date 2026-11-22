@@ -45,27 +45,35 @@ for entry in feed.iter():
 
 def get_channel_tab(tab, language):
     url = f"https://www.youtube.com/@{CHANNEL_HANDLE}/{tab}"
-    result = subprocess.run(
-        [
-            sys.executable,
-            "-m",
-            "yt_dlp",
-            "--dump-single-json",
-            "--skip-download",
-            "--playlist-end",
-            str(VIDEO_LIMIT),
-            "--no-warnings",
-            "--extractor-args",
-            f"youtube:lang={language}",
-            "--js-runtimes",
-            "node",
-            url,
-        ],
-        check=True,
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-    )
+    command = [
+        sys.executable,
+        "-m",
+        "yt_dlp",
+        "--dump-single-json",
+        "--skip-download",
+        "--playlist-end",
+        str(VIDEO_LIMIT),
+        "--no-warnings",
+        "--extractor-args",
+        f"youtube:lang={language}",
+        "--js-runtimes",
+        "node",
+        url,
+    ]
+    try:
+        result = subprocess.run(
+            command,
+            check=True,
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+        )
+    except subprocess.CalledProcessError as error:
+        details = (error.stderr or error.stdout or "No yt-dlp output").strip()
+        raise RuntimeError(
+            f"yt-dlp failed for {tab}/{language} with exit code {error.returncode}:\n{details[-4000:]}"
+        ) from error
+
     data = json.loads(result.stdout)
     subscriber_count = data.get("channel_follower_count")
     entries = []
