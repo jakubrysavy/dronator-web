@@ -146,6 +146,8 @@
 
     .video-meta { margin: 7px 0 0; color: var(--muted); font-size: 12px; }
 
+    .video-section + .video-section { margin-top: 58px; }
+
     .status {
       grid-column: 1 / -1;
       margin: 0;
@@ -197,13 +199,23 @@
       <img src="img/dronatorV3_white-1024x203.png" alt="Dronator">
     </a>
 
-    <section aria-labelledby="latest-heading">
+    <section class="video-section" aria-labelledby="latest-videos-heading">
       <div class="section-heading">
-        <h1 id="latest-heading">Latest videos</h1>
+        <h1 id="latest-videos-heading">Latest Videos</h1>
         <span class="heading-rule" aria-hidden="true"></span>
       </div>
       <div class="video-grid" id="videos" aria-live="polite">
         <p class="status">Loading videos…</p>
+      </div>
+    </section>
+
+    <section class="video-section" aria-labelledby="latest-shorts-heading">
+      <div class="section-heading">
+        <h1 id="latest-shorts-heading">Latest Shorts</h1>
+        <span class="heading-rule" aria-hidden="true"></span>
+      </div>
+      <div class="video-grid" id="shorts" aria-live="polite">
+        <p class="status">Loading Shorts…</p>
       </div>
     </section>
 
@@ -216,10 +228,11 @@
   <script>
     const channelUrl = 'https://www.youtube.com/@Dronatorcz';
     const videoGrid = document.querySelector('#videos');
+    const shortsGrid = document.querySelector('#shorts');
     document.querySelector('#copyright-year').textContent = new Date().getFullYear();
 
-    function showStatus(message, includeLink = false) {
-      videoGrid.replaceChildren();
+    function showStatus(grid, message, includeLink = false) {
+      grid.replaceChildren();
       const status = document.createElement('p');
       status.className = 'status';
       status.append(document.createTextNode(message));
@@ -234,19 +247,21 @@
         status.append(link);
       }
 
-      videoGrid.append(status);
+      grid.append(status);
     }
 
-    function createVideoCard(video, index) {
+    function createVideoCard(video, index, isShort = false) {
       const { id: videoId, title, published } = video;
       if (!videoId || !title) return null;
 
       const link = document.createElement('a');
       link.className = 'video-card';
-      link.href = `https://www.youtube.com/watch?v=${encodeURIComponent(videoId)}`;
+      link.href = isShort
+        ? `https://www.youtube.com/shorts/${encodeURIComponent(videoId)}`
+        : `https://www.youtube.com/watch?v=${encodeURIComponent(videoId)}`;
       link.target = '_blank';
       link.rel = 'noopener noreferrer';
-      link.setAttribute('aria-label', `${title} (opens on YouTube)`);
+      link.setAttribute('aria-label', `${title} (opens on YouTube${isShort ? ' Shorts' : ''})`);
 
       const thumbnailWrap = document.createElement('div');
       thumbnailWrap.className = 'thumbnail-wrap';
@@ -267,26 +282,32 @@
       heading.className = 'video-title';
       heading.textContent = title;
 
-      const date = document.createElement('p');
-      date.className = 'video-meta';
-      date.textContent = published
-        ? new Intl.DateTimeFormat('en', { dateStyle: 'medium', timeZone: 'UTC' }).format(new Date(published))
-        : 'Dronator';
-
-      link.append(thumbnailWrap, heading, date);
+      link.append(thumbnailWrap, heading);
+      if (published) {
+        const date = document.createElement('p');
+        date.className = 'video-meta';
+        date.textContent = new Intl.DateTimeFormat('en', { dateStyle: 'medium', timeZone: 'UTC' }).format(new Date(published));
+        link.append(date);
+      }
       return link;
     }
 
     function loadVideos() {
       try {
         const videos = window.DRONATOR_VIDEOS;
-        if (!Array.isArray(videos)) throw new Error('Video data is missing');
-        const cards = videos.slice(0, 9).map(createVideoCard).filter(Boolean);
-        if (!cards.length) throw new Error('No videos found');
-        videoGrid.replaceChildren(...cards);
+        const shorts = window.DRONATOR_SHORTS;
+        if (!Array.isArray(videos) || !Array.isArray(shorts)) throw new Error('Video data is missing');
+
+        const videoCards = videos.slice(0, 9).map((video, index) => createVideoCard(video, index)).filter(Boolean);
+        const shortCards = shorts.slice(0, 9).map((video, index) => createVideoCard(video, index, true)).filter(Boolean);
+        if (!videoCards.length || !shortCards.length) throw new Error('A video list is empty');
+
+        videoGrid.replaceChildren(...videoCards);
+        shortsGrid.replaceChildren(...shortCards);
       } catch (error) {
         console.error('Unable to load the latest videos:', error);
-        showStatus('Videos could not be loaded right now.', true);
+        showStatus(videoGrid, 'Videos could not be loaded right now.', true);
+        showStatus(shortsGrid, 'Shorts could not be loaded right now.', true);
       }
     }
 
