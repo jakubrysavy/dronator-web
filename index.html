@@ -6,46 +6,12 @@
   <meta name="theme-color" content="#101112">
   <meta name="description" content="The latest videos from Dronator.">
   <title>Dronator | Latest videos</title>
+  <link rel="stylesheet" href="site.css">
   <style>
-    :root {
-      color-scheme: dark;
-      --background: #101112;
-      --surface: #191b1d;
-      --text: #f3f4f4;
-      --muted: #9da2a4;
-      --accent: #e44337;
-      --border: #2b2e30;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      min-width: 320px;
-      min-height: 100vh;
-      margin: 0;
-      background:
-        radial-gradient(ellipse at 50% -24rem, rgba(255,255,255,.075), transparent 44rem),
-        var(--background);
-      color: var(--text);
-      font-family: "Segoe UI", sans-serif;
-    }
-
     .page-shell {
       width: min(1120px, calc(100% - 48px));
       margin: 0 auto;
-      padding: 66px 0 72px;
-    }
-
-    .brand {
-      display: flex;
-      justify-content: center;
-      margin: 0 auto 75px;
-    }
-
-    .brand img {
-      display: block;
-      width: min(100%, 510px);
-      height: auto;
+      padding: 48px 0 72px;
     }
 
     .section-heading {
@@ -146,6 +112,18 @@
 
     .video-meta { margin: 7px 0 0; color: var(--muted); font-size: 12px; }
 
+    .video-description {
+      display: -webkit-box;
+      overflow: hidden;
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+    }
+
     .video-section + .video-section { margin-top: 58px; }
 
     .status {
@@ -161,29 +139,18 @@
 
     .status a { color: var(--text); text-underline-offset: 3px; }
 
-    .site-footer {
-      margin-top: 54px;
-      border-top: 1px solid var(--border);
-      padding-top: 20px;
-      color: var(--muted);
-      font-size: 13px;
-      text-align: center;
-    }
-
     @keyframes rise-in {
       from { opacity: 0; transform: translateY(9px); }
       to { opacity: 1; transform: translateY(0); }
     }
 
     @media (max-width: 760px) {
-      .page-shell { width: min(100% - 32px, 620px); padding-top: 44px; }
-      .brand { margin-bottom: 56px; }
+      .page-shell { width: min(100% - 32px, 620px); padding-top: 38px; }
       .video-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 14px; }
     }
 
     @media (max-width: 480px) {
-      .page-shell { width: calc(100% - 28px); padding-top: 34px; }
-      .brand { margin-bottom: 46px; }
+      .page-shell { width: calc(100% - 28px); padding-top: 30px; }
       .video-grid { grid-template-columns: 1fr; gap: 23px; }
       .video-title { min-height: auto; }
     }
@@ -194,54 +161,51 @@
   </style>
 </head>
 <body>
-  <main class="page-shell">
-    <a class="brand" href="https://www.youtube.com/@Dronatorcz" aria-label="Dronator on YouTube">
-      <img src="img/dronatorV3_white-1024x203.png" alt="Dronator">
-    </a>
+  <header class="site-header" data-site-header></header>
 
-    <section class="video-section" aria-labelledby="latest-videos-heading">
+  <main class="page-shell">
+    <section class="video-section" id="latest-videos" aria-labelledby="latest-videos-heading">
       <div class="section-heading">
-        <h1 id="latest-videos-heading">Latest Videos</h1>
+        <h1 id="latest-videos-heading" data-i18n="latestVideos">Latest Videos</h1>
         <span class="heading-rule" aria-hidden="true"></span>
       </div>
       <div class="video-grid" id="videos" aria-live="polite">
-        <p class="status">Loading videos…</p>
+        <p class="status" data-i18n="loadingVideos">Loading videos…</p>
       </div>
     </section>
 
-    <section class="video-section" aria-labelledby="latest-shorts-heading">
+    <section class="video-section" id="latest-shorts" aria-labelledby="latest-shorts-heading">
       <div class="section-heading">
-        <h1 id="latest-shorts-heading">Latest Shorts</h1>
+        <h1 id="latest-shorts-heading" data-i18n="latestShorts">Latest Shorts</h1>
         <span class="heading-rule" aria-hidden="true"></span>
       </div>
       <div class="video-grid" id="shorts" aria-live="polite">
-        <p class="status">Loading Shorts…</p>
+        <p class="status" data-i18n="loadingShorts">Loading Shorts…</p>
       </div>
     </section>
 
-    <footer class="site-footer">
-      Copyright &copy; <time id="copyright-year"></time> dronator.cz
-    </footer>
   </main>
+  <footer class="site-footer" data-site-footer></footer>
 
   <script src="videos.js"></script>
+  <script src="site-layout.js"></script>
   <script>
     const channelUrl = 'https://www.youtube.com/@Dronatorcz';
     const videoGrid = document.querySelector('#videos');
     const shortsGrid = document.querySelector('#shorts');
-    document.querySelector('#copyright-year').textContent = new Date().getFullYear();
+    const messages = window.DRONATOR_TRANSLATIONS;
 
-    function showStatus(grid, message, includeLink = false) {
+    function showStatus(grid, message, linkLabel) {
       grid.replaceChildren();
       const status = document.createElement('p');
       status.className = 'status';
       status.append(document.createTextNode(message));
 
-      if (includeLink) {
+      if (linkLabel) {
         status.append(document.createTextNode(' '));
         const link = document.createElement('a');
         link.href = channelUrl;
-        link.textContent = 'Visit the Dronator channel';
+        link.textContent = linkLabel;
         link.target = '_blank';
         link.rel = 'noopener noreferrer';
         status.append(link);
@@ -250,8 +214,10 @@
       grid.append(status);
     }
 
-    function createVideoCard(video, index, isShort = false) {
-      const { id: videoId, title, published } = video;
+    function createVideoCard(video, index, language, isShort = false) {
+      const { id: videoId, published } = video;
+      const title = video.titles?.[language] || video.titles?.en || video.title || '';
+      const description = video.descriptions?.[language] || video.descriptions?.en || '';
       if (!videoId || !title) return null;
 
       const link = document.createElement('a');
@@ -261,7 +227,7 @@
         : `https://www.youtube.com/watch?v=${encodeURIComponent(videoId)}`;
       link.target = '_blank';
       link.rel = 'noopener noreferrer';
-      link.setAttribute('aria-label', `${title} (opens on YouTube${isShort ? ' Shorts' : ''})`);
+      link.setAttribute('aria-label', `${title} (${messages[language].opensOnYouTube}${isShort ? ` ${messages[language].shorts}` : ''})`);
 
       const thumbnailWrap = document.createElement('div');
       thumbnailWrap.className = 'thumbnail-wrap';
@@ -283,10 +249,19 @@
       heading.textContent = title;
 
       link.append(thumbnailWrap, heading);
+      if (description) {
+        const descriptionText = document.createElement('p');
+        descriptionText.className = 'video-description';
+        descriptionText.textContent = description;
+        link.append(descriptionText);
+      }
       if (published) {
         const date = document.createElement('p');
         date.className = 'video-meta';
-        date.textContent = new Intl.DateTimeFormat('en', { dateStyle: 'medium', timeZone: 'UTC' }).format(new Date(published));
+        date.textContent = new Intl.DateTimeFormat(language, {
+          dateStyle: 'medium',
+          timeZone: 'UTC',
+        }).format(new Date(published));
         link.append(date);
       }
       return link;
@@ -296,22 +271,25 @@
       try {
         const videos = window.DRONATOR_VIDEOS;
         const shorts = window.DRONATOR_SHORTS;
+        const language = window.DRONATOR_LANGUAGE;
         if (!Array.isArray(videos) || !Array.isArray(shorts)) throw new Error('Video data is missing');
 
-        const videoCards = videos.slice(0, 9).map((video, index) => createVideoCard(video, index)).filter(Boolean);
-        const shortCards = shorts.slice(0, 9).map((video, index) => createVideoCard(video, index, true)).filter(Boolean);
+        const videoCards = videos.slice(0, 9).map((video, index) => createVideoCard(video, index, language)).filter(Boolean);
+        const shortCards = shorts.slice(0, 9).map((video, index) => createVideoCard(video, index, language, true)).filter(Boolean);
         if (!videoCards.length || !shortCards.length) throw new Error('A video list is empty');
 
         videoGrid.replaceChildren(...videoCards);
         shortsGrid.replaceChildren(...shortCards);
       } catch (error) {
         console.error('Unable to load the latest videos:', error);
-        showStatus(videoGrid, 'Videos could not be loaded right now.', true);
-        showStatus(shortsGrid, 'Shorts could not be loaded right now.', true);
+        const language = window.DRONATOR_LANGUAGE;
+        showStatus(videoGrid, messages[language].videosError, messages[language].visitChannel);
+        showStatus(shortsGrid, messages[language].shortsError, messages[language].visitChannel);
       }
     }
 
     loadVideos();
+    window.addEventListener('dronator:language-change', loadVideos);
   </script>
 </body>
 </html>
