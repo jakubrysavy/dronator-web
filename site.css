@@ -22,7 +22,6 @@ body {
 }
 
 .site-header {
-  border-bottom: 1px solid var(--border);
   background: rgba(16,17,18,.92);
 }
 
@@ -32,6 +31,7 @@ body {
   gap: 14px;
   width: min(1120px, calc(100% - 48px));
   margin: 0 auto;
+  border-bottom: 1px solid var(--border);
   padding: 14px 0 0;
 }
 
@@ -115,7 +115,8 @@ body {
 .site-nav a:hover,
 .site-nav a[aria-current="page"] { color: var(--text); }
 
-.site-nav a[aria-current="page"]::after {
+.site-nav a:hover::after,
+.site-nav a[aria-current="page"]:not([data-nav="home"])::after {
   position: absolute;
   right: 0;
   bottom: -16px;

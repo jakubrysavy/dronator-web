@@ -11,6 +11,14 @@ window.DRONATOR_TRANSLATIONS = {
     home: 'Home',
     videos: 'Videos',
     shorts: 'Shorts',
+    about: 'About me',
+    aboutHeading: 'About me',
+    aboutName: 'Jakub, dronator.cz',
+    aboutPhotoAlt: 'Portrait of Jakub',
+    aboutText: '“My name is Jakub. I have been a DJI drone pilot since 2024. I hold a remote pilot competency certificate for the A2 subcategory of the Open category, issued by the Civil Aviation Authority of the Czech Republic. Drones fascinated me before that, and since 2024 I have felt like a full-fledged member of the drone community. I fly in accordance with applicable laws, with the consent of the people concerned and, when needed, with permission from landowners. I edit my videos and music using freely available tools.”',
+    contact: 'Contact',
+    contactHeading: 'Contact',
+    contactText: 'Have a question, a collaboration proposal, or are you interested in using my footage? Email me at',
     latestVideos: 'Latest Videos',
     latestShorts: 'Latest Shorts',
     loadingVideos: 'Loading videos…',
@@ -32,6 +40,14 @@ window.DRONATOR_TRANSLATIONS = {
     home: 'Domů',
     videos: 'Videa',
     shorts: 'Shorts',
+    about: 'O mně',
+    aboutHeading: 'O mně',
+    aboutName: 'Jakub, dronator.cz',
+    aboutPhotoAlt: 'Portrét Jakuba',
+    aboutText: '„Jmenuji se Jakub. Od roku 2024 jsem pilotem dronů DJI. Mám osvědčení dálkově řídícího pilota pro podkategorii A2 otevřené kategorie, které vydal Úřad pro civilní letectví České republiky. Drony mě fascinovaly už dříve a od roku 2024 se cítím jako plnohodnotný člen komunity dronařů. Létám v souladu s platnými právními předpisy, se souhlasem dotčených osob a v případě potřeby i s povolením majitelů pozemků. Videa a hudbu střihám ve volně dostupných nástrojích.“',
+    contact: 'Kontakt',
+    contactHeading: 'Kontakt',
+    contactText: 'Máte dotaz, nabídku spolupráce nebo zájem o využití záběrů? Napište mi na',
     latestVideos: 'Nejnovější videa',
     latestShorts: 'Nejnovější Shorts',
     loadingVideos: 'Načítání videí…',
@@ -53,6 +69,14 @@ window.DRONATOR_TRANSLATIONS = {
     home: 'Strona główna',
     videos: 'Filmy',
     shorts: 'Shorts',
+    about: 'O mnie',
+    aboutHeading: 'O mnie',
+    aboutName: 'Jakub, dronator.cz',
+    aboutPhotoAlt: 'Portret Jakuba',
+    aboutText: '„Nazywam się Jakub. Od 2024 roku jestem pilotem dronów DJI. Posiadam certyfikat kompetencji pilota zdalnego sterowania w podkategorii A2 kategorii otwartej, wydany przez Urząd Lotnictwa Cywilnego Republiki Czeskiej. Drony fascynowały mnie już wcześniej, a od 2024 roku czuję się pełnoprawnym członkiem społeczności droniarzy. Lataję zgodnie z obowiązującymi przepisami prawa, za zgodą osób, których to dotyczy, a w razie potrzeby także za zgodą właścicieli gruntów. Montuję filmy i dodaję muzykę za pomocą ogólnodostępnych narzędzi.”',
+    contact: 'Kontakt',
+    contactHeading: 'Kontakt',
+    contactText: 'Masz pytanie, propozycję współpracy lub chcesz wykorzystać moje ujęcia? Napisz do mnie na',
     latestVideos: 'Najnowsze filmy',
     latestShorts: 'Najnowsze Shorts',
     loadingVideos: 'Ładowanie filmów…',
@@ -74,6 +98,14 @@ window.DRONATOR_TRANSLATIONS = {
     home: 'Startseite',
     videos: 'Videos',
     shorts: 'Shorts',
+    about: 'Über mich',
+    aboutHeading: 'Über mich',
+    aboutName: 'Jakub, dronator.cz',
+    aboutPhotoAlt: 'Porträt von Jakub',
+    aboutText: '„Ich heiße Jakub. Seit 2024 bin ich DJI-Drohnenpilot. Ich besitze den Fernpiloten-Kompetenznachweis für die Unterkategorie A2 der offenen Kategorie, ausgestellt von der Zivilluftfahrtbehörde der Tschechischen Republik. Drohnen haben mich schon zuvor fasziniert, und seit 2024 fühle ich mich als vollwertiges Mitglied der Drohnen-Community. Ich fliege im Einklang mit den geltenden Rechtsvorschriften, mit Zustimmung der betroffenen Personen und bei Bedarf auch mit Genehmigung der Grundstückseigentümer. Meine Videos und die Musik schneide ich mit frei verfügbaren Tools.“',
+    contact: 'Kontakt',
+    contactHeading: 'Kontakt',
+    contactText: 'Haben Sie eine Frage, einen Kooperationsvorschlag oder Interesse an der Nutzung meiner Aufnahmen? Schreiben Sie mir an',
     latestVideos: 'Neueste Videos',
     latestShorts: 'Neueste Shorts',
     loadingVideos: 'Videos werden geladen…',
@@ -95,6 +127,14 @@ window.DRONATOR_TRANSLATIONS = {
     home: 'Inicio',
     videos: 'Vídeos',
     shorts: 'Shorts',
+    about: 'Sobre mí',
+    aboutHeading: 'Sobre mí',
+    aboutName: 'Jakub, dronator.cz',
+    aboutPhotoAlt: 'Retrato de Jakub',
+    aboutText: '«Me llamo Jakub. Desde 2024 soy piloto de drones DJI. Tengo el certificado de competencia de piloto a distancia para la subcategoría A2 de la categoría abierta, expedido por la Autoridad de Aviación Civil de la República Checa. Los drones ya me fascinaban antes y, desde 2024, me siento miembro de pleno derecho de la comunidad de pilotos de drones. Vuelo de acuerdo con la legislación vigente, con el consentimiento de las personas afectadas y, cuando es necesario, también con el permiso de los propietarios de los terrenos. Edito mis vídeos y la música con herramientas de libre acceso.»',
+    contact: 'Contacto',
+    contactHeading: 'Contacto',
+    contactText: '¿Tienes alguna pregunta, una propuesta de colaboración o te interesa utilizar mis tomas? Escríbeme a',
     latestVideos: 'Últimos vídeos',
     latestShorts: 'Últimos Shorts',
     loadingVideos: 'Cargando vídeos…',
@@ -116,6 +156,14 @@ window.DRONATOR_TRANSLATIONS = {
     home: 'Главная',
     videos: 'Видео',
     shorts: 'Shorts',
+    about: 'Обо мне',
+    aboutHeading: 'Обо мне',
+    aboutName: 'Jakub, dronator.cz',
+    aboutPhotoAlt: 'Портрет Якуба',
+    aboutText: '«Меня зовут Якуб. С 2024 года я пилот дронов DJI. У меня есть сертификат компетентности дистанционного пилота для подкатегории A2 открытой категории, выданный Управлением гражданской авиации Чешской Республики. Дроны увлекали меня и раньше, а с 2024 года я чувствую себя полноценным участником сообщества пилотов дронов. Я летаю в соответствии с действующим законодательством, с согласия затронутых лиц и, при необходимости, с разрешения владельцев земельных участков. Видео и музыку я монтирую с помощью свободно доступных инструментов.»',
+    contact: 'Контакты',
+    contactHeading: 'Контакты',
+    contactText: 'Есть вопрос, предложение о сотрудничестве или хотите использовать мои кадры? Напишите мне на',
     latestVideos: 'Последние видео',
     latestShorts: 'Последние Shorts',
     loadingVideos: 'Загрузка видео…',
@@ -154,9 +202,10 @@ if (siteHeader) {
         <span data-i18n="subscribers">subscribers</span>
       </p>
       <nav class="site-nav" aria-label="Main navigation">
-        <a href="index.html" data-nav="home" data-i18n="home">Home</a>
         <a href="index.html#latest-videos" data-nav="videos" data-i18n="videos">Videos</a>
         <a href="index.html#latest-shorts" data-nav="shorts" data-i18n="shorts">Shorts</a>
+        <a href="index.html#about-me" data-nav="about" data-i18n="about">About me</a>
+        <a href="index.html#contact" data-nav="contact" data-i18n="contact">Contact</a>
       </nav>
     </div>
   `;
@@ -187,6 +236,11 @@ function setDronatorLanguage(language) {
   document.querySelectorAll('[data-i18n]').forEach((element) => {
     const translation = copy[element.dataset.i18n];
     if (translation) element.textContent = translation;
+  });
+
+  document.querySelectorAll('[data-i18n-alt]').forEach((element) => {
+    const translation = copy[element.dataset.i18nAlt];
+    if (translation) element.alt = translation;
   });
 
   if (siteHeader) {

@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#101112">
   <meta name="description" content="The latest videos from Dronator.">
   <title>Dronator | Latest videos</title>
+  <link rel="icon" href="img/icon.ico" type="image/x-icon">
   <link rel="stylesheet" href="site.css">
   <style>
     .page-shell {
@@ -19,7 +20,7 @@
       align-items: center;
       gap: 18px;
       margin-bottom: 25px;
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid rgba(228, 67, 55, .28);
       padding-bottom: 15px;
     }
 
@@ -30,8 +31,6 @@
       letter-spacing: .08em;
       text-transform: uppercase;
     }
-
-    .heading-rule { flex: 1; height: 1px; background: var(--border); }
 
     .video-grid {
       display: grid;
@@ -126,6 +125,56 @@
 
     .video-section + .video-section { margin-top: 58px; }
 
+    .about-profile {
+      display: grid;
+      grid-template-columns: minmax(0, 240px) minmax(0, 1fr);
+      align-items: start;
+      gap: 34px;
+    }
+
+    .about-portrait {
+      margin: 0;
+    }
+
+    .about-portrait img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      background: var(--surface);
+    }
+
+    .about-caption {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .about-quote {
+      margin: 0;
+      border-left: 2px solid var(--accent);
+      padding-left: 24px;
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.75;
+    }
+
+    .about-quote p { max-width: 820px; margin: 0; }
+
+    .contact-text {
+      max-width: 820px;
+      margin: 0;
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.75;
+    }
+
+    .contact-text a {
+      color: var(--text);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
     .status {
       grid-column: 1 / -1;
       margin: 0;
@@ -155,6 +204,12 @@
       .video-title { min-height: auto; }
     }
 
+    @media (max-width: 560px) {
+      .about-profile { grid-template-columns: 1fr; gap: 22px; }
+      .about-portrait img { width: min(100%, 220px); }
+      .about-quote { padding-left: 18px; }
+    }
+
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
     }
@@ -167,7 +222,6 @@
     <section class="video-section" id="latest-videos" aria-labelledby="latest-videos-heading">
       <div class="section-heading">
         <h1 id="latest-videos-heading" data-i18n="latestVideos">Latest Videos</h1>
-        <span class="heading-rule" aria-hidden="true"></span>
       </div>
       <div class="video-grid" id="videos" aria-live="polite">
         <p class="status" data-i18n="loadingVideos">Loading videos…</p>
@@ -177,11 +231,35 @@
     <section class="video-section" id="latest-shorts" aria-labelledby="latest-shorts-heading">
       <div class="section-heading">
         <h1 id="latest-shorts-heading" data-i18n="latestShorts">Latest Shorts</h1>
-        <span class="heading-rule" aria-hidden="true"></span>
       </div>
       <div class="video-grid" id="shorts" aria-live="polite">
         <p class="status" data-i18n="loadingShorts">Loading Shorts…</p>
       </div>
+    </section>
+
+    <section class="video-section" id="about-me" aria-labelledby="about-heading">
+      <div class="section-heading">
+        <h1 id="about-heading" data-i18n="aboutHeading">About me</h1>
+      </div>
+      <div class="about-profile">
+        <figure class="about-portrait">
+          <img src="img/avatar.png" alt="Portrait of Jakub" data-i18n-alt="aboutPhotoAlt">
+          <figcaption class="about-caption" data-i18n="aboutName">Jakub</figcaption>
+        </figure>
+        <blockquote class="about-quote">
+          <p data-i18n="aboutText">“My name is Jakub. I have been a DJI drone pilot since 2024. I hold a remote pilot competency certificate for the A2 subcategory of the Open category, issued by the Civil Aviation Authority of the Czech Republic. Drones fascinated me before that, and since 2024 I have felt like a full-fledged member of the drone community. I fly in accordance with applicable laws, with the consent of the people concerned and, when needed, with permission from landowners. I edit my videos and music using freely available tools.”</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="video-section" id="contact" aria-labelledby="contact-heading">
+      <div class="section-heading">
+        <h1 id="contact-heading" data-i18n="contactHeading">Contact</h1>
+      </div>
+      <p class="contact-text">
+        <span data-i18n="contactText">Have a question, a collaboration proposal, or are you interested in using my footage? Email me at</span>
+        <a href="mailto:dronatorcz@gmail.com">dronatorcz@gmail.com</a>.
+      </p>
     </section>
 
   </main>
