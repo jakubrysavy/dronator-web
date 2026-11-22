@@ -65,22 +65,22 @@ window.DRONATOR_VIDEOS = [
   },
   {
     "id": "lQHRINlFzwQ",
-    "title": "Úchvatné záběry z Pobaltí 2025 s dronem ve 4K",
+    "title": "Stunning Drone Footage of the Baltics 2025 in 4K",
     "titles": {
-      "en": "Úchvatné záběry z Pobaltí 2025 s dronem ve 4K",
+      "en": "Stunning Drone Footage of the Baltics 2025 in 4K",
       "cs": "Úchvatné záběry z Pobaltí 2025 s dronem ve 4K",
-      "pl": "Úchvatné záběry z Pobaltí 2025 s dronem ve 4K",
-      "de": "Úchvatné záběry z Pobaltí 2025 s dronem ve 4K",
-      "es": "Úchvatné záběry z Pobaltí 2025 s dronem ve 4K",
-      "ru": "Úchvatné záběry z Pobaltí 2025 s dronem ve 4K"
+      "pl": "Zapierające dech w piersiach ujęcia z drona znad Bałtyku 2025 w 4K",
+      "de": "Atemberaubende Drohnenaufnahmen aus dem Baltikum 2025 in 4K",
+      "es": "Impresionantes imágenes con dron del Báltico 2025 en 4K",
+      "ru": "Потрясающие кадры Балтии 2025 с дрона в 4K"
     },
     "descriptions": {
-      "en": "Ponořte se opět do záběrů z Pobaltí ze sbírky 2025 z ptačí perspektivy!\nZáznamy pochází z Polska, Litvy, Lotyšska a Estonska.\n\nVšechny záběry byly natočeny s důrazem na bezpečnost a jsou natočené dle platných pravidel v EU prostoru. Záběry zachycují zóny, kde lze vzlétnout za určitých podmínek. Přelety nad osobním vlastnictvím je po dohodě s majitelem pozemku ústně odsouhlaseno.\n\nJako vždy, dron na prvním místě!",
+      "en": "Dive once again into aerial footage of the Baltics from the 2025 collection!\nThe footage comes from Poland, Lithuania, Latvia and Estonia.\n\nAll shots were filmed with safety in mind and in accordance with the applicable rules in the EU. The footage shows zones where takeoff is permitted under certain conditions. Flights over private property were verbally agreed with the landowners in advance.\n\nAs always, drone first!",
       "cs": "Ponořte se opět do záběrů z Pobaltí ze sbírky 2025 z ptačí perspektivy!\nZáznamy pochází z Polska, Litvy, Lotyšska a Estonska.\n\nVšechny záběry byly natočeny s důrazem na bezpečnost a jsou natočené dle platných pravidel v EU prostoru. Záběry zachycují zóny, kde lze vzlétnout za určitých podmínek. Přelety nad osobním vlastnictvím je po dohodě s majitelem pozemku ústně odsouhlaseno.\n\nJako vždy, dron na prvním místě!",
-      "pl": "Ponořte se opět do záběrů z Pobaltí ze sbírky 2025 z ptačí perspektivy!\nZáznamy pochází z Polska, Litvy, Lotyšska a Estonska.\n\nVšechny záběry byly natočeny s důrazem na bezpečnost a jsou natočené dle platných pravidel v EU prostoru. Záběry zachycují zóny, kde lze vzlétnout za určitých podmínek. Přelety nad osobním vlastnictvím je po dohodě s majitelem pozemku ústně odsouhlaseno.\n\nJako vždy, dron na prvním místě!",
-      "de": "Ponořte se opět do záběrů z Pobaltí ze sbírky 2025 z ptačí perspektivy!\nZáznamy pochází z Polska, Litvy, Lotyšska a Estonska.\n\nVšechny záběry byly natočeny s důrazem na bezpečnost a jsou natočené dle platných pravidel v EU prostoru. Záběry zachycují zóny, kde lze vzlétnout za určitých podmínek. Přelety nad osobním vlastnictvím je po dohodě s majitelem pozemku ústně odsouhlaseno.\n\nJako vždy, dron na prvním místě!",
-      "es": "Ponořte se opět do záběrů z Pobaltí ze sbírky 2025 z ptačí perspektivy!\nZáznamy pochází z Polska, Litvy, Lotyšska a Estonska.\n\nVšechny záběry byly natočeny s důrazem na bezpečnost a jsou natočené dle platných pravidel v EU prostoru. Záběry zachycují zóny, kde lze vzlétnout za určitých podmínek. Přelety nad osobním vlastnictvím je po dohodě s majitelem pozemku ústně odsouhlaseno.\n\nJako vždy, dron na prvním místě!",
-      "ru": "Ponořte se opět do záběrů z Pobaltí ze sbírky 2025 z ptačí perspektivy!\nZáznamy pochází z Polska, Litvy, Lotyšska a Estonska.\n\nVšechny záběry byly natočeny s důrazem na bezpečnost a jsou natočené dle platných pravidel v EU prostoru. Záběry zachycují zóny, kde lze vzlétnout za určitých podmínek. Přelety nad osobním vlastnictvím je po dohodě s majitelem pozemku ústně odsouhlaseno.\n\nJako vždy, dron na prvním místě!"
+      "pl": "Zanurz się ponownie w ujęciach z krajów bałtyckich z kolekcji 2025, nagranych z lotu ptaka!\nMateriał pochodzi z Polski, Litwy, Łotwy i Estonii.\n\nWszystkie ujęcia nagrano z naciskiem na bezpieczeństwo i zgodnie z obowiązującymi przepisami w UE. Materiał przedstawia strefy, w których można wystartować pod określonymi warunkami. Loty nad terenem prywatnym zostały ustnie uzgodnione z właścicielami gruntów.\n\nJak zawsze, dron przede wszystkim!",
+      "de": "Tauche erneut in Aufnahmen aus dem Baltikum aus der Kollektion 2025 ein, aus der Vogelperspektive!\nDie Aufnahmen stammen aus Polen, Litauen, Lettland und Estland.\n\nAlle Aufnahmen entstanden mit Fokus auf Sicherheit und im Einklang mit den geltenden Vorschriften im EU-Raum. Die Aufnahmen zeigen Zonen, in denen unter bestimmten Bedingungen gestartet werden darf. Überflüge über Privatgrundstücke wurden mündlich mit den Grundstückseigentümern abgestimmt.\n\nWie immer: Drohne zuerst!",
+      "es": "¡Sumérgete de nuevo en las imágenes del Báltico de la colección 2025 desde una perspectiva aérea!\nLas grabaciones proceden de Polonia, Lituania, Letonia y Estonia.\n\nTodas las tomas se grabaron priorizando la seguridad y conforme a la normativa vigente en el espacio de la UE. Las imágenes muestran zonas desde las que se puede despegar bajo ciertas condiciones. Los sobrevuelos de propiedades privadas se acordaron verbalmente con los propietarios de los terrenos.\n\n¡Como siempre, el dron es lo primero!",
+      "ru": "Снова погрузитесь в кадры Балтии из коллекции 2025 года с высоты птичьего полёта!\nСъёмки сделаны в Польше, Литве, Латвии и Эстонии.\n\nВсе кадры сняты с акцентом на безопасность и в соответствии с действующими правилами в зоне ЕС. В кадре показаны зоны, где при определённых условиях разрешён взлёт. Пролёты над частной собственностью были устно согласованы с владельцами земли.\n\nКак всегда, дрон на первом месте!"
     },
     "published": "2025-07-17T11:23:05+00:00"
   },
@@ -140,7 +140,7 @@ window.DRONATOR_VIDEOS = [
     "descriptions": {
       "en": "The Baltic state of Latvia has a really beautiful sea and an endless coastline that is not overcrowded in the summer season. There are far fewer tourists here than you might expect. Enjoy the day with an extraordinary spectacle of shots that have no end!\n\n\n\n\nMusic: Bensound.com\nLicense codes: AVBPLHTDKEOHYVJW, CJ6BZMLDTAG4QPRT, UNV2PJLFYMEWCQJT, CFD9OSTOTFPWQBJG, S2VWCWBZNVJG4J2Y, ZLJYVZQQX5JBXG0R, I8RS2NTZON6TG3RG",
       "cs": "Pobaltský stát Lotyšsko má opravdu nádherné moře a nekonečné pobřeží, které není v letní sezóně přelidněné. Nachází se zde daleko méně turistů než byste čekali. Zpříjemněte si den nevšední podívanou na záběry, které nemají konce!\n\n\n\n\nMusic: Bensound.com\nLicense codes: AVBPLHTDKEOHYVJW, CJ6BZMLDTAG4QPRT, UNV2PJLFYMEWCQJT, CFD9OSTOTFPWQBJG, S2VWCWBZNVJG4J2Y, ZLJYVZQQX5JBXG0R, I8RS2NTZON6TG3RG",
-      "pl": "Kraj bałtycki na Łotwie ma naprawdę piękne morze i niekończącą się linię brzegową, która nie jest przepełniona w sezonie letnim. Turystów jest tu znacznie mniej, niż można by się spodziewać. Ciesz się dniem z niezwykłym spektaklem ujęć, które nie mają końca!\n\n\n\n\nMuzyka: Bensound.com\nKody licencyjne: AVBPLHTDKEOHYVJW, CJ6BZMLDTAG4QPRT, UNV2PJLFYMEWCQJT, CFD9OSTOTFPWQBJG, S2VWCWBZNVJG4J2Y, ZLJYVZQQX5JBXG0R, I8RS2NTZON6TG3RG",
+      "pl": "The Baltic state of Latvia has a really beautiful sea and an endless coastline that is not overcrowded in the summer season. There are far fewer tourists here than you might expect. Enjoy the day with an extraordinary spectacle of shots that have no end!\n\n\n\n\nMusic: Bensound.com\nLicense codes: AVBPLHTDKEOHYVJW, CJ6BZMLDTAG4QPRT, UNV2PJLFYMEWCQJT, CFD9OSTOTFPWQBJG, S2VWCWBZNVJG4J2Y, ZLJYVZQQX5JBXG0R, I8RS2NTZON6TG3RG",
       "de": "Der baltische Staat Lettland verfügt über ein wirklich schönes Meer und eine endlose Küste, die im Sommer nicht überfüllt ist. Es gibt hier weit weniger Touristen, als man erwarten würde. Genießen Sie den Tag mit einem außergewöhnlichen Spektakel an Aufnahmen, die kein Ende nehmen!\n\n\n\n\nMusik: Bensound.com\nLizenzcodes: AVBPLHTDKEOHYVJW, CJ6BZMLDTAG4QPRT, UNV2PJLFYMEWCQJT, CFD9OSTOTFPWQBJG, S2VWCWBZNVJG4J2Y, ZLJYVZQQX5JBXG0R, I8RS2NTZON6TG3RG",
       "es": "El estado báltico de Letonia tiene un mar realmente hermoso y una costa interminable que no está masificada en la temporada de verano. Aquí hay muchos menos turistas de los que cabría esperar. ¡Disfruta del día con un extraordinario espectáculo de tiros que no tienen fin!\n\n\n\n\nMúsica: Bensound.com\nCódigos de licencia: AVBPLHTDKEOHYVJW, CJ6BZMLDTAG4QPRT, UNV2PJLFYMEWCQJT, CFD9OSTOTFPWQBJG, S2VWCWBZNVJG4J2Y, ZLJYVZQQX5JBXG0R, I8RS2NTZON6TG3RG",
       "ru": "В прибалтийском государстве Латвия действительно красивое море и бескрайняя береговая линия, не переполненная в летний сезон. Туристов здесь гораздо меньше, чем можно было ожидать. Наслаждайтесь днем ​​с необыкновенным зрелищем кадров, которым нет конца!\n\n\n\n\nМузыка: Bensound.com.\nКоды лицензий: AVBPLHTDKEOHYVJW, CJ6BZMLDTAG4QPRT, UNV2PJLFYMEWCQJT, CFD9OSTOTFPWQBJG, S2VWCWBZNVJG4J2Y, ZLJYVZQQX5JBXG0R, I8RS2NTZON6TG3RG."
@@ -193,106 +193,106 @@ window.DRONATOR_VIDEOS = [
 window.DRONATOR_SHORTS = [
   {
     "id": "REfbHUbbQhI",
-    "title": "31. října 2026",
+    "title": "Forest Bar in the Fog!",
     "titles": {
-      "en": "31. října 2026",
-      "cs": "31. října 2026",
-      "pl": "31. října 2026",
-      "de": "31. října 2026",
-      "es": "31. října 2026",
-      "ru": "31. října 2026"
+      "en": "Forest Bar in the Fog!",
+      "cs": "Lesní bar v mlze!",
+      "pl": "Leśny Bar we mgle!",
+      "de": "Waldbar im Nebel!",
+      "es": "¡El Bar del Bosque entre la niebla!",
+      "ru": "Лесной бар в тумане!"
     },
     "descriptions": {
-      "en": "🇨🇿Lesní bar",
-      "cs": "🇨🇿Lesní bar",
-      "pl": "🇨🇿Lesní bar",
-      "de": "🇨🇿Lesní bar",
-      "es": "🇨🇿Lesní bar",
-      "ru": "🇨🇿Lesní bar"
+      "en": "Autumn at the Forest Bar in the Jeseníky Mountains, Czechia.",
+      "cs": "Podzim u Lesního baru v Jeseníkách v Česku.",
+      "pl": "Jesień przy Leśnym Barze w Jesionikach w Czechach.",
+      "de": "Herbst an der Waldbar im Altvatergebirge (Jeseníky) in Tschechien.",
+      "es": "Otoño en el Bar del Bosque, en las montañas Jeseníky, en Chequia.",
+      "ru": "Осень у «Лесного бара» в горах Есеники в Чехии."
     },
     "published": "2026-10-31T21:57:18+00:00"
   },
   {
     "id": "JvRoaaNmhcU",
-    "title": "Stop scrolling... just enjoy some of the nature moments...",
+    "title": "Take a Moment for This Shot of Malá Amerika",
     "titles": {
-      "en": "Stop scrolling... just enjoy some of the nature moments...",
-      "cs": "Stop scrolling... just enjoy some of the nature moments...",
-      "pl": "Stop scrolling... just enjoy some of the nature moments...",
-      "de": "Stop scrolling... just enjoy some of the nature moments...",
-      "es": "Stop scrolling... just enjoy some of the nature moments...",
-      "ru": "Stop scrolling... just enjoy some of the nature moments..."
+      "en": "Take a Moment for This Shot of Malá Amerika",
+      "cs": "Pozastav se nad záběrem z Malé Ameriky",
+      "pl": "Zatrzymaj się nad ujęciem z Małej Ameryki",
+      "de": "Halte inne bei dieser Aufnahme aus Malá Amerika",
+      "es": "Detente ante esta imagen de Malá Amerika",
+      "ru": "Остановитесь и взгляните на этот кадр из Малой Америки"
     },
     "descriptions": {
-      "en": "",
-      "cs": "",
-      "pl": "",
-      "de": "",
-      "es": "",
-      "ru": ""
+      "en": "Malá Amerika quarry is located near Karlštejn in Czechia.",
+      "cs": "Lom Malá Amerika se nachází poblíž Karlštejna v Česku.",
+      "pl": "Kamieniołom Malá Amerika znajduje się w pobliżu Karlštejna w Czechach.",
+      "de": "Der Steinbruch Malá Amerika (Klein-Amerika) liegt in der Nähe von Karlštejn (Burg Karlstein) in Tschechien.",
+      "es": "La cantera Malá Amerika se encuentra cerca de Karlštejn, en Chequia.",
+      "ru": "Карьер Мала-Америка находится недалеко от Карлштейна в Чехии."
     },
     "published": "2026-07-13T09:57:08+00:00"
   },
   {
     "id": "4scJjMYoUNk",
-    "title": "Nehezký drone crash, kolik bude stát oprava?",
+    "title": "Ugly Drone Crash, How Much Will the Repair Cost?",
     "titles": {
-      "en": "Nehezký drone crash, kolik bude stát oprava?",
+      "en": "Ugly Drone Crash, How Much Will the Repair Cost?",
       "cs": "Nehezký drone crash, kolik bude stát oprava?",
-      "pl": "Nehezký drone crash, kolik bude stát oprava?",
-      "de": "Nehezký drone crash, kolik bude stát oprava?",
-      "es": "Nehezký drone crash, kolik bude stát oprava?",
-      "ru": "Nehezký drone crash, kolik bude stát oprava?"
+      "pl": "Brzydki crash drona, ile będzie kosztować naprawa?",
+      "de": "Übler Drohnen-Crash, was kostet die Reparatur?",
+      "es": "Feo accidente de dron, ¿cuánto costará la reparación?",
+      "ru": "Неприятная авария дрона: сколько будет стоить ремонт?"
     },
     "descriptions": {
-      "en": "Crashnul jsem s dronem, počkej si na pád. Stojí to za to!",
-      "cs": "Crashnul jsem s dronem, počkej si na pád. Stojí to za to!",
-      "pl": "Crashnul jsem s dronem, počkej si na pád. Stojí to za to!",
-      "de": "Crashnul jsem s dronem, počkej si na pád. Stojí to za to!",
-      "es": "Crashnul jsem s dronem, počkej si na pád. Stojí to za to!",
-      "ru": "Crashnul jsem s dronem, počkej si na pád. Stojí to za to!"
+      "en": "I crashed my drone. Wait for the fall, it's worth it!",
+      "cs": "Naboural jsem s dronem, počkej si na pád. Stojí to za to!",
+      "pl": "Rozbiłem drona. Poczekaj na upadek, warto!",
+      "de": "Ich habe meine Drohne gecrasht. Warte auf den Absturz, es lohnt sich!",
+      "es": "He estrellado mi dron. Espera a la caída, ¡merece la pena!",
+      "ru": "Я разбил дрон. Дождись падения, оно того стоит!"
     },
     "published": "2024-07-27T19:26:43+00:00"
   },
   {
     "id": "Y8c4A68jfBk",
-    "title": "Nekonečné pobřeží bez lidí 😨",
+    "title": "Endless Coastline Without People 😨",
     "titles": {
-      "en": "Nekonečné pobřeží bez lidí 😨",
+      "en": "Endless Coastline Without People 😨",
       "cs": "Nekonečné pobřeží bez lidí 😨",
-      "pl": "Nekonečné pobřeží bez lidí 😨",
-      "de": "Nekonečné pobřeží bez lidí 😨",
-      "es": "Nekonečné pobřeží bez lidí 😨",
-      "ru": "Nekonečné pobřeží bez lidí 😨"
+      "pl": "Nieskończone wybrzeże bez ludzi 😨",
+      "de": "Endlose Küste ohne Menschen 😨",
+      "es": "Costa interminable sin gente 😨",
+      "ru": "Название: Бесконечное побережье без людей 😨"
     },
     "descriptions": {
-      "en": "",
-      "cs": "",
-      "pl": "",
-      "de": "",
-      "es": "",
-      "ru": ""
+      "en": "The coast of Latvia.",
+      "cs": "Lotyšské pobřeží Lotyšska.",
+      "pl": "Wybrzeże Łotwy.",
+      "de": "Die Küste Lettlands.",
+      "es": "La costa de Letonia.",
+      "ru": "Побережье Латвии."
     },
     "published": "2024-07-22T20:22:29+00:00"
   },
   {
     "id": "6jD6KU8LW-o",
-    "title": "Priessnitzovy léčebné lázně",
+    "title": "Priessnitz Spa",
     "titles": {
-      "en": "Priessnitzovy léčebné lázně",
+      "en": "Priessnitz Spa",
       "cs": "Priessnitzovy léčebné lázně",
-      "pl": "Priessnitzovy léčebné lázně",
-      "de": "Priessnitzovy léčebné lázně",
-      "es": "Priessnitzovy léčebné lázně",
-      "ru": "Priessnitzovy léčebné lázně"
+      "pl": "Uzdrowisko Priessnitza",
+      "de": "Priessnitz Heilbäder",
+      "es": "Balneario Priessnitz",
+      "ru": "Лечебные курорты Priessnitz"
     },
     "descriptions": {
-      "en": "Krásná příroda v klimatických lázní :-)",
-      "cs": "Krásná příroda v klimatických lázní :-)",
-      "pl": "Krásná příroda v klimatických lázní :-)",
-      "de": "Krásná příroda v klimatických lázní :-)",
-      "es": "Krásná příroda v klimatických lázní :-)",
-      "ru": "Krásná příroda v klimatických lázní :-)"
+      "en": "Beautiful nature at a climatic spa resort in Czechia :-)",
+      "cs": "Krásná příroda v klimatických lázní v Česku :-)",
+      "pl": "Piękna przyroda w uzdrowisku klimatycznym w Czechach :-)",
+      "de": "Wunderschöne Natur im Kurort mit Heilklima in Tschechien :-)",
+      "es": "Hermosa naturaleza en un balneario climático en Chequia :-)",
+      "ru": "Красивая природа в климатическом курорте в Чехии :-)"
     },
     "published": ""
   },
@@ -303,7 +303,7 @@ window.DRONATOR_SHORTS = [
       "en": "Behind the scenes - Baltics 2024 and the drone crash",
       "cs": "Behind the scenes - Pobaltí 2024 a náraz dronem",
       "pl": "Za kulisami – Baltí 2024 i katastrofa drona",
-      "de": "Behind the scenes - Pobaltí 2024 a náraz dronem",
+      "de": "Behind the Scenes – Baltikum 2024 und ein Drohnen-Crash",
       "es": "Detrás de escena: Bálticos 2024 y el accidente del dron",
       "ru": "За кулисами - Балти-2024 и крушение дрона"
     },
@@ -311,8 +311,8 @@ window.DRONATOR_SHORTS = [
       "en": "Beautiful shots from the Baltic coast - Lithuania, Latvia and Estonia.\nBut sometimes it doesn't work out and the drone ends up where it shouldn't.\n\nDrone in the first place! Dronator.cz!",
       "cs": "Krásné záběry z pobřeží Pobaltí - Litvy, Lotyšska a Estonska.\nHolt někdy se to nepovede a dron skončí tam, kde nemá.\n\nDron na prvním místě! Dronator.cz!",
       "pl": "Piękne ujęcia z wybrzeża Bałtyku - Litwy, Łotwy i Estonii.\nCzasem jednak to nie wychodzi i dron ląduje tam, gdzie nie powinien.\n\nPo pierwsze dron! Dronator.cz!",
-      "de": "Krásné záběry z pobřeží Pobaltí - Litvy, Lotyšska a Estonska.\nHolt někdy se to nepovede a dron skončí tam, kde nemá.\n\nDron na prvním místě! Dronator.cz!",
-      "es": "Beautiful shots from the Baltic coast - Lithuania, Latvia and Estonia.\nBut sometimes it doesn't work out and the drone ends up where it shouldn't.\n\nDrone in the first place! Dronator.cz!",
+      "de": "Wunderschöne Aufnahmen von der Küste des Baltikums: Litauen, Lettland und Estland.\nManchmal geht eben etwas schief, und die Drohne landet dort, wo sie nicht hingehört.\n\nDrohne zuerst! Dronator.cz!",
+      "es": "Hermosas fotografías de la costa báltica: Lituania, Letonia y Estonia.\nPero a veces no funciona y el dron acaba donde no debería.\n\n¡Drone en primer lugar! Dronator.cz!",
       "ru": "Красивые кадры с побережья Балтийского моря – Литвы, Латвии и Эстонии.\nНо иногда не получается и дрон оказывается там, где не должен.\n\nДрон в первую очередь! Dronator.cz!"
     },
     "published": ""
