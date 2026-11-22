@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101112">
+  <meta name="description" content="The latest videos from Dronator.">
+  <title>Dronator | Latest videos</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --background: #101112;
+      --surface: #191b1d;
+      --text: #f3f4f4;
+      --muted: #9da2a4;
+      --accent: #e44337;
+      --border: #2b2e30;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      min-width: 320px;
+      min-height: 100vh;
+      margin: 0;
+      background:
+        radial-gradient(ellipse at 50% -24rem, rgba(255,255,255,.075), transparent 44rem),
+        var(--background);
+      color: var(--text);
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    .page-shell {
+      width: min(1120px, calc(100% - 48px));
+      margin: 0 auto;
+      padding: 66px 0 72px;
+    }
+
+    .brand {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto 75px;
+    }
+
+    .brand img {
+      display: block;
+      width: min(100%, 510px);
+      height: auto;
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 25px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 15px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 19px;
+      font-weight: 750;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .heading-rule { flex: 1; height: 1px; background: var(--border); }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 28px 20px;
+    }
+
+    .video-card {
+      min-width: 0;
+      color: inherit;
+      text-decoration: none;
+      animation: rise-in .45s both;
+    }
+
+    .video-card:nth-child(2) { animation-delay: 45ms; }
+    .video-card:nth-child(3) { animation-delay: 90ms; }
+    .video-card:nth-child(4) { animation-delay: 135ms; }
+    .video-card:nth-child(5) { animation-delay: 180ms; }
+    .video-card:nth-child(6) { animation-delay: 225ms; }
+    .video-card:nth-child(7) { animation-delay: 270ms; }
+    .video-card:nth-child(8) { animation-delay: 315ms; }
+    .video-card:nth-child(9) { animation-delay: 360ms; }
+
+    .thumbnail-wrap {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 16 / 9;
+      background: var(--surface);
+    }
+
+    .thumbnail-wrap::after {
+      position: absolute;
+      inset: 45% 0 0;
+      background: linear-gradient(transparent, rgba(0,0,0,.22));
+      content: "";
+      pointer-events: none;
+    }
+
+    .thumbnail {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .25s ease, opacity .25s ease;
+    }
+
+    .video-card:hover .thumbnail { transform: scale(1.035); opacity: .88; }
+
+    .play-mark {
+      position: absolute;
+      z-index: 1;
+      right: 12px;
+      bottom: 12px;
+      display: grid;
+      width: 38px;
+      height: 27px;
+      place-items: center;
+      border-radius: 5px;
+      background: var(--accent);
+      color: white;
+      font-size: 13px;
+      line-height: 1;
+    }
+
+    .video-title {
+      display: -webkit-box;
+      overflow: hidden;
+      min-height: 44px;
+      margin: 12px 0 0;
+      color: var(--text);
+      font-size: 15px;
+      font-weight: 650;
+      line-height: 1.45;
+      line-clamp: 2;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }
+
+    .video-meta { margin: 7px 0 0; color: var(--muted); font-size: 12px; }
+
+    .status {
+      grid-column: 1 / -1;
+      margin: 0;
+      padding: 42px 18px;
+      border: 1px solid var(--border);
+      background: rgba(25,27,29,.65);
+      color: var(--muted);
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    .status a { color: var(--text); text-underline-offset: 3px; }
+
+    .site-footer {
+      margin-top: 54px;
+      border-top: 1px solid var(--border);
+      padding-top: 20px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @keyframes rise-in {
+      from { opacity: 0; transform: translateY(9px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 760px) {
+      .page-shell { width: min(100% - 32px, 620px); padding-top: 44px; }
+      .brand { margin-bottom: 56px; }
+      .video-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 14px; }
+    }
+
+    @media (max-width: 480px) {
+      .page-shell { width: calc(100% - 28px); padding-top: 34px; }
+      .brand { margin-bottom: 46px; }
+      .video-grid { grid-template-columns: 1fr; gap: 23px; }
+      .video-title { min-height: auto; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page-shell">
+    <a class="brand" href="https://www.youtube.com/@Dronatorcz" aria-label="Dronator on YouTube">
+      <img src="img/dronatorV3_white-1024x203.png" alt="Dronator">
+    </a>
+
+    <section aria-labelledby="latest-heading">
+      <div class="section-heading">
+        <h1 id="latest-heading">Latest videos</h1>
+        <span class="heading-rule" aria-hidden="true"></span>
+      </div>
+      <div class="video-grid" id="videos" aria-live="polite">
+        <p class="status">Loading videos…</p>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      Copyright &copy; <time id="copyright-year"></time> dronator.cz
+    </footer>
+  </main>
+
+  <script src="videos.js"></script>
+  <script>
+    const channelUrl = 'https://www.youtube.com/@Dronatorcz';
+    const videoGrid = document.querySelector('#videos');
+    document.querySelector('#copyright-year').textContent = new Date().getFullYear();
+
+    function showStatus(message, includeLink = false) {
+      videoGrid.replaceChildren();
+      const status = document.createElement('p');
+      status.className = 'status';
+      status.append(document.createTextNode(message));
+
+      if (includeLink) {
+        status.append(document.createTextNode(' '));
+        const link = document.createElement('a');
+        link.href = channelUrl;
+        link.textContent = 'Visit the Dronator channel';
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        status.append(link);
+      }
+
+      videoGrid.append(status);
+    }
+
+    function createVideoCard(video, index) {
+      const { id: videoId, title, published } = video;
+      if (!videoId || !title) return null;
+
+      const link = document.createElement('a');
+      link.className = 'video-card';
+      link.href = `https://www.youtube.com/watch?v=${encodeURIComponent(videoId)}`;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.setAttribute('aria-label', `${title} (opens on YouTube)`);
+
+      const thumbnailWrap = document.createElement('div');
+      thumbnailWrap.className = 'thumbnail-wrap';
+      const thumbnail = document.createElement('img');
+      thumbnail.className = 'thumbnail';
+      thumbnail.src = `https://i.ytimg.com/vi/${encodeURIComponent(videoId)}/hqdefault.jpg`;
+      thumbnail.alt = '';
+      thumbnail.loading = index < 3 ? 'eager' : 'lazy';
+      thumbnailWrap.append(thumbnail);
+
+      const playMark = document.createElement('span');
+      playMark.className = 'play-mark';
+      playMark.setAttribute('aria-hidden', 'true');
+      playMark.textContent = '▶';
+      thumbnailWrap.append(playMark);
+
+      const heading = document.createElement('h2');
+      heading.className = 'video-title';
+      heading.textContent = title;
+
+      const date = document.createElement('p');
+      date.className = 'video-meta';
+      date.textContent = published
+        ? new Intl.DateTimeFormat('en', { dateStyle: 'medium', timeZone: 'UTC' }).format(new Date(published))
+        : 'Dronator';
+
+      link.append(thumbnailWrap, heading, date);
+      return link;
+    }
+
+    function loadVideos() {
+      try {
+        const videos = window.DRONATOR_VIDEOS;
+        if (!Array.isArray(videos)) throw new Error('Video data is missing');
+        const cards = videos.slice(0, 9).map(createVideoCard).filter(Boolean);
+        if (!cards.length) throw new Error('No videos found');
+        videoGrid.replaceChildren(...cards);
+      } catch (error) {
+        console.error('Unable to load the latest videos:', error);
+        showStatus('Videos could not be loaded right now.', true);
+      }
+    }
+
+    loadVideos();
+  </script>
+</body>
+</html>
