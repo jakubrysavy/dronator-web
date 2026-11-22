@@ -49,6 +49,7 @@ def get_channel_tab(tab, language):
         sys.executable,
         "-m",
         "yt_dlp",
+        "--flat-playlist",
         "--dump-single-json",
         "--skip-download",
         "--playlist-end",
