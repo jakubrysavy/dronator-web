@@ -1,9 +1,13 @@
+import gzip
 import json
 import subprocess
 import sys
+import time
 import urllib.request
 import xml.etree.ElementTree as ET
+from html.parser import HTMLParser
 from pathlib import Path
+from urllib.parse import urlencode
 
 
 CHANNEL_ID = "UC_YdeYtoEHdiNy2lpI6jJqw"
@@ -12,6 +16,28 @@ OUTPUT_PATH = Path(__file__).resolve().parents[1] / "videos.js"
 CHANNEL_HANDLE = "Dronatorcz"
 VIDEO_LIMIT = 9
 LANGUAGES = ("en", "cs", "pl", "de", "es", "ru")
+LANGUAGE_REGIONS = {"en": "US", "cs": "CZ", "pl": "PL", "de": "DE", "es": "ES", "ru": "RU"}
+VIDEO_METADATA_CACHE = {}
+
+
+class ScriptParser(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.scripts = []
+        self.current_script = None
+
+    def handle_starttag(self, tag, attrs):
+        if tag.lower() == "script":
+            self.current_script = []
+
+    def handle_endtag(self, tag):
+        if tag.lower() == "script" and self.current_script is not None:
+            self.scripts.append("".join(self.current_script))
+            self.current_script = None
+
+    def handle_data(self, data):
+        if self.current_script is not None:
+            self.current_script.append(data)
 
 
 def local_name(tag):
@@ -23,6 +49,81 @@ def child_text(element, name):
         if local_name(child.tag) == name and child.text:
             return child.text.strip()
     return ""
+
+
+def get_initial_data(html):
+    parser = ScriptParser()
+    parser.feed(html)
+    marker = "ytInitialData ="
+    decoder = json.JSONDecoder()
+
+    for script in parser.scripts:
+        marker_index = script.find(marker)
+        if marker_index < 0:
+            continue
+        json_start = marker_index + len(marker)
+        initial_data, _ = decoder.raw_decode(script[json_start:].lstrip())
+        return initial_data
+
+    raise ValueError("YouTube page did not contain ytInitialData")
+
+
+def find_renderer(data, renderer_name):
+    pending = [data]
+    while pending:
+        current = pending.pop()
+        if isinstance(current, dict):
+            renderer = current.get(renderer_name)
+            if isinstance(renderer, dict):
+                return renderer
+            pending.extend(current.values())
+        elif isinstance(current, list):
+            pending.extend(current)
+    return {}
+
+
+def get_localized_video_metadata(video_id, language):
+    cache_key = (video_id, language)
+    if cache_key in VIDEO_METADATA_CACHE:
+        return VIDEO_METADATA_CACHE[cache_key]
+
+    query = urlencode({
+        "v": video_id,
+        "hl": language,
+        "gl": LANGUAGE_REGIONS[language],
+        "persist_hl": "1",
+    })
+    request = urllib.request.Request(
+        f"https://www.youtube.com/watch?{query}",
+        headers={
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+            "Accept-Language": f"{language},{language};q=0.9,en;q=0.8",
+            "Accept-Encoding": "gzip",
+        },
+    )
+
+    try:
+        time.sleep(0.25)
+        with urllib.request.urlopen(request, timeout=30) as response:
+            payload = response.read()
+            if response.headers.get("Content-Encoding") == "gzip":
+                payload = gzip.decompress(payload)
+        initial_data = get_initial_data(payload.decode("utf-8", errors="replace"))
+
+        primary_info = find_renderer(initial_data, "videoPrimaryInfoRenderer")
+        secondary_info = find_renderer(initial_data, "videoSecondaryInfoRenderer")
+        title_data = primary_info.get("title", {})
+        title = title_data.get("simpleText") or "".join(
+            run.get("text", "") for run in title_data.get("runs", [])
+        )
+        description = secondary_info.get("attributedDescription", {}).get("content", "")
+        metadata = {"title": title, "description": description}
+    except (OSError, ValueError, json.JSONDecodeError) as error:
+        print(f"Warning: YouTube {language} metadata unavailable for {video_id}: {error}", file=sys.stderr)
+        metadata = {}
+
+    VIDEO_METADATA_CACHE[cache_key] = metadata
+    return metadata
 
 
 with urllib.request.urlopen(FEED_URL, timeout=30) as response:
@@ -112,25 +213,40 @@ def merge_translations(localized_entries):
     for english_video in localized_entries["en"]:
         video_id = english_video["id"]
         source_video = feed_videos.get(video_id, {})
-        english_title = english_video.get("title") or source_video.get("title") or ""
-        english_description = english_video.get("description") or source_video.get("description") or ""
-        titles = {
-            language: entries_by_language[language].get(video_id, {}).get("title") or english_title
+        localized_metadata = {
+            language: get_localized_video_metadata(video_id, language)
             for language in LANGUAGES
         }
-        descriptions = {
-            language: entries_by_language[language].get(video_id, {}).get("description") or english_description
-            for language in LANGUAGES
-        }
+        english_entry = entries_by_language["en"].get(video_id, {})
+        english_page_metadata = localized_metadata["en"]
+        english_title = (
+            english_page_metadata.get("title")
+            or english_entry.get("title")
+            or source_video.get("title")
+            or ""
+        )
+        english_description = (
+            english_page_metadata.get("description")
+            or english_entry.get("description")
+            or source_video.get("description")
+            or ""
+        )
+        titles = {}
+        descriptions = {}
         for language in LANGUAGES:
-            localized_title = titles[language]
-            source_title = source_video.get("title")
-            if language not in ("en", "cs") and source_title and localized_title == source_title:
-                titles[language] = english_title
-            localized_description = descriptions[language]
-            source_description = source_video.get("description")
-            if language not in ("en", "cs") and source_description and localized_description == source_description:
-                descriptions[language] = english_description
+            entry = entries_by_language[language].get(video_id, {})
+            page_metadata = localized_metadata[language]
+            localized_title = page_metadata.get("title") or entry.get("title") or ""
+            localized_description = page_metadata.get("description") or entry.get("description") or ""
+
+            if language not in ("en", "cs") and localized_title == source_video.get("title"):
+                localized_title = ""
+            if language not in ("en", "cs") and localized_description == source_video.get("description"):
+                localized_description = ""
+
+            titles[language] = localized_title or english_title
+            descriptions[language] = localized_description or english_description
+
         published = source_video.get("published") or english_video.get("published") or ""
 
         translated_entries.append({
