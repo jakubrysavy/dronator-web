@@ -140,7 +140,7 @@ window.DRONATOR_VIDEOS = [
     "descriptions": {
       "en": "The Baltic state of Latvia has a really beautiful sea and an endless coastline that is not overcrowded in the summer season. There are far fewer tourists here than you might expect. Enjoy the day with an extraordinary spectacle of shots that have no end!\n\n\n\n\nMusic: Bensound.com\nLicense codes: AVBPLHTDKEOHYVJW, CJ6BZMLDTAG4QPRT, UNV2PJLFYMEWCQJT, CFD9OSTOTFPWQBJG, S2VWCWBZNVJG4J2Y, ZLJYVZQQX5JBXG0R, I8RS2NTZON6TG3RG",
       "cs": "Pobaltský stát Lotyšsko má opravdu nádherné moře a nekonečné pobřeží, které není v letní sezóně přelidněné. Nachází se zde daleko méně turistů než byste čekali. Zpříjemněte si den nevšední podívanou na záběry, které nemají konce!\n\n\n\n\nMusic: Bensound.com\nLicense codes: AVBPLHTDKEOHYVJW, CJ6BZMLDTAG4QPRT, UNV2PJLFYMEWCQJT, CFD9OSTOTFPWQBJG, S2VWCWBZNVJG4J2Y, ZLJYVZQQX5JBXG0R, I8RS2NTZON6TG3RG",
-      "pl": "The Baltic state of Latvia has a really beautiful sea and an endless coastline that is not overcrowded in the summer season. There are far fewer tourists here than you might expect. Enjoy the day with an extraordinary spectacle of shots that have no end!\n\n\n\n\nMusic: Bensound.com\nLicense codes: AVBPLHTDKEOHYVJW, CJ6BZMLDTAG4QPRT, UNV2PJLFYMEWCQJT, CFD9OSTOTFPWQBJG, S2VWCWBZNVJG4J2Y, ZLJYVZQQX5JBXG0R, I8RS2NTZON6TG3RG",
+      "pl": "Kraj bałtycki na Łotwie ma naprawdę piękne morze i niekończącą się linię brzegową, która nie jest przepełniona w sezonie letnim. Turystów jest tu znacznie mniej, niż można by się spodziewać. Ciesz się dniem z niezwykłym spektaklem ujęć, które nie mają końca!\n\n\n\n\nMuzyka: Bensound.com\nKody licencyjne: AVBPLHTDKEOHYVJW, CJ6BZMLDTAG4QPRT, UNV2PJLFYMEWCQJT, CFD9OSTOTFPWQBJG, S2VWCWBZNVJG4J2Y, ZLJYVZQQX5JBXG0R, I8RS2NTZON6TG3RG",
       "de": "Der baltische Staat Lettland verfügt über ein wirklich schönes Meer und eine endlose Küste, die im Sommer nicht überfüllt ist. Es gibt hier weit weniger Touristen, als man erwarten würde. Genießen Sie den Tag mit einem außergewöhnlichen Spektakel an Aufnahmen, die kein Ende nehmen!\n\n\n\n\nMusik: Bensound.com\nLizenzcodes: AVBPLHTDKEOHYVJW, CJ6BZMLDTAG4QPRT, UNV2PJLFYMEWCQJT, CFD9OSTOTFPWQBJG, S2VWCWBZNVJG4J2Y, ZLJYVZQQX5JBXG0R, I8RS2NTZON6TG3RG",
       "es": "El estado báltico de Letonia tiene un mar realmente hermoso y una costa interminable que no está masificada en la temporada de verano. Aquí hay muchos menos turistas de los que cabría esperar. ¡Disfruta del día con un extraordinario espectáculo de tiros que no tienen fin!\n\n\n\n\nMúsica: Bensound.com\nCódigos de licencia: AVBPLHTDKEOHYVJW, CJ6BZMLDTAG4QPRT, UNV2PJLFYMEWCQJT, CFD9OSTOTFPWQBJG, S2VWCWBZNVJG4J2Y, ZLJYVZQQX5JBXG0R, I8RS2NTZON6TG3RG",
       "ru": "В прибалтийском государстве Латвия действительно красивое море и бескрайняя береговая линия, не переполненная в летний сезон. Туристов здесь гораздо меньше, чем можно было ожидать. Наслаждайтесь днем ​​с необыкновенным зрелищем кадров, которым нет конца!\n\n\n\n\nМузыка: Bensound.com.\nКоды лицензий: AVBPLHTDKEOHYVJW, CJ6BZMLDTAG4QPRT, UNV2PJLFYMEWCQJT, CFD9OSTOTFPWQBJG, S2VWCWBZNVJG4J2Y, ZLJYVZQQX5JBXG0R, I8RS2NTZON6TG3RG."
@@ -185,9 +185,135 @@ window.DRONATOR_VIDEOS = [
       "pl": "Święty Jan pod Skalou to wieś w województwie środkowoczeskim, w powiecie Beroun, niecałe 5 km na wschód od Berouna. Leży w sercu Czeskiego Krasu i wraz z Karlštejnem i starożytnym Tetínem jest jednym z najciekawszych miejsc turystycznych w powiecie. Mieszka tu 198 mieszkańców.\n\nPo pierwsze dron!\n\nMuzyka, której używam: Bensound.com\nKod licencji: XUFAMANQEOBUDWIB",
       "de": "Svatý Jan pod Skalou ist ein Dorf in der mittelböhmischen Region, Bezirk Beroun, weniger als 5 km östlich von Beroun. Es liegt im Herzen des Böhmischen Karsts und ist zusammen mit Karlštejn und dem antiken Tetín einer der interessantesten Touristenorte in der Region. Hier leben 198 Einwohner.\n\nDrohne an erster Stelle!\n\nMusik, die ich verwende: Bensound.com\nLizenzcode: XUFAMANQEOBUDWIB",
       "es": "Svatý Jan pod Skalou es un pueblo de la región de Bohemia Central, distrito de Beroun, a menos de 5 km al este de Beroun. Se encuentra en el corazón del Karst de Bohemia y, junto con Karlštejn y la antigua Tetín, es uno de los lugares turísticos más interesantes del distrito. Aquí viven 198 habitantes.\n\n¡Drone en primer lugar!\n\nMúsica que uso: Bensound.com\nCódigo de licencia: XUFAMANQEOBUDWIB",
-      "ru": "Святой Ян под Скалоу — деревня в Среднечешском крае, Бероунский район, менее чем в 5 км к востоку от Бероуна. Он расположен в самом сердце Чешского карста и вместе с Карлштейном и древним Тетином является одним из самых интересных туристических мест в районе. Здесь проживают 198 жителей.\n\nДрон в первую очередь!\n\nМузыка, которую я использую: Bensound.com.\nКод лицензии: XUFAMANQEOBUDWIB"
+      "ru": "Saint Jan pod Skalou is a village in the Central Bohemian region, Beroun district, less than 5 km east of Beroun. It lies in the heart of the Bohemian Karst and, together with Karlštejn and ancient Tetín, is one of the most interesting tourist locations in the district. 198 inhabitants live here.\n\nDrone in the first place!\n\nMusic I use: Bensound.com\nLicense code: XUFAMANQEOBUDWIB"
     },
     "published": "2024-09-01T16:22:58+00:00"
+  },
+  {
+    "id": "t7aKR2Axzns",
+    "title": "Český Krumlov from a drone in 4K",
+    "titles": {
+      "en": "Český Krumlov from a drone in 4K",
+      "cs": "Český Krumlov z dronu ve 4K",
+      "pl": "Český Krumlov z drona w 4K",
+      "de": "Český Krumlov aus einer Drohne in 4K",
+      "es": "Český Krumlov desde un dron en 4K",
+      "ru": "Чески Крумлов с дрона в 4К"
+    },
+    "descriptions": {
+      "en": "Český Krumlov is located in the South Bohemian Region and is 22 km from České Budějovice. Around 13,000 people live here and it is known for the fact that many powerful Czech families resided here in the past, and this creates its charming character.\n\nThe images were taken in accordance with the applicable legislation and rules with UAS.\n\nAs always at the end... Drone first!\n\n\n\nRoyalty Free Music: Bensound.com/royalty-free-music\nLicense code: RD9RU801MFCTG7JP",
+      "cs": "Český Krumlov leží v Jihočeském kraji a je 22km vzdálené od Českých Budějovic. Žije zde okolo 13 tisíc lidí a je známý tím, že zde sídlilo v minulosti mnoho mocných českých rodů a tím tvoří svůj půvabný charakter.\n\nZáběry byly pořízeny v souladu s platnou legislativou a pravidly s UAS.\n\nJako vždy na konec... Dron na prvním místě!\n\n\n\nRoyalty Free Music: Bensound.com/royalty-free-music\nLicense code: RD9RU801MFCTG7JP",
+      "pl": "Czeski Krumlov położony jest w kraju południowoczeskim, 22 km od Czeskich Budziejowic. Mieszka tu około 13 000 osób i wiadomo, że w przeszłości mieszkało tu wiele wpływowych czeskich rodzin, co nadaje mu urokliwy charakter.\n\nZdjęcia zostały wykonane zgodnie z obowiązującymi przepisami i przepisami obowiązującymi w UAS.\n\nJak zawsze na koniec... Najpierw dron!\n\n\n\nRoyalty Free Music: Bensound.com/royalty-free-music\nLicense code: RD9RU801MFCTG7JP",
+      "de": "Český Krumlov liegt in der Südböhmischen Region und ist 22 km von České Budějovice entfernt. Hier leben rund 13.000 Menschen und es ist dafür bekannt, dass hier in der Vergangenheit viele mächtige tschechische Familien ansässig waren, was seinen charmanten Charakter ausmacht.\n\nDie Bilder wurden in Übereinstimmung mit den geltenden Gesetzen und Regeln mit UAS aufgenommen.\n\nWie immer am Ende... Drohne zuerst!\n\n\n\nRoyalty Free Music: Bensound.com/royalty-free-music\nLicense code: RD9RU801MFCTG7JP",
+      "es": "Český Krumlov se encuentra en la región de Bohemia del Sur y está a 22 km de České Budějovice. Aquí viven unas 13.000 personas y es conocido porque en el pasado residieron aquí muchas familias checas poderosas, lo que crea su carácter encantador.\n\nLas imágenes fueron tomadas de acuerdo con la legislación y normas aplicables con UAS.\n\nComo siempre al final... ¡Drone primero!\n\n\n\nRoyalty Free Music: Bensound.com/royalty-free-music\nLicense code: RD9RU801MFCTG7JP",
+      "ru": "Город Чески-Крумлов расположен в Южночешском крае, в 22 км от города Ческе-Будеевице. Здесь проживает около 13 000 человек, и он известен тем, что в прошлом здесь проживало много влиятельных чешских семей, и это создает его очаровательный характер.\n\nИзображения были сделаны в соответствии с действующим законодательством и правилами использования БПЛА.\n\nКак всегда в конце... Сначала дрон!\n\n\n\nRoyalty Free Music: Bensound.com/royalty-free-music\nLicense code: RD9RU801MFCTG7JP"
+    },
+    "published": "2024-08-10T19:05:31+00:00"
+  },
+  {
+    "id": "DuuD76sQAgM",
+    "title": "Prokop rocks from the air",
+    "titles": {
+      "en": "Prokop rocks from the air",
+      "cs": "Prokopské skály ze vzduchu ve 4K",
+      "pl": "Prokop kołysze się z powietrza",
+      "de": "Prokop rockt aus der Luft",
+      "es": "Prokop se balancea desde el aire",
+      "ru": "Прокоп качается с воздуха"
+    },
+    "descriptions": {
+      "en": "The Prokop rocks are located near the village of Hlubočepy (Czech Republic).\n\nThese rocks are not the only ones in the vicinity of Hlubočep, there are at least 4 similar beautiful places in the immediate vicinity.\n\nAll UAS footage was taken in accordance with applicable legislation.\n\nDrone in the first place!",
+      "cs": "Prokopské skály leží u obce Hlubočepy.\n\nTyto skály nejsou jediné v okolí Hlubočep, hned v nedaleké blízkosti jsou nejméně 4 podobná krásná místa.\n\nVšechny záběry z UAS byly pořízeny dle platné legislativy.\n\nDron na prvním místě!",
+      "pl": "Skały Prokop znajdują się w pobliżu wsi Hlubočepy (Czechy).\n\nTe skały nie są jedynymi w pobliżu Hlubočepa, w bezpośrednim sąsiedztwie znajdują się co najmniej 4 podobne piękne miejsca.\n\nCały materiał filmowy UAS został nagrany zgodnie z obowiązującymi przepisami.\n\nPo pierwsze dron!",
+      "de": "Die Prokop-Felsen liegen in der Nähe des Dorfes Hlubočepy (Tschechische Republik).\n\nDiese Felsen sind nicht die einzigen in der Nähe von Hlubočep, es gibt mindestens 4 ähnlich schöne Orte in unmittelbarer Nähe.\n\nSämtliche UAS-Aufnahmen wurden in Übereinstimmung mit den geltenden Gesetzen aufgenommen.\n\nDrohne an erster Stelle!",
+      "es": "Las rocas de Prokop se encuentran cerca del pueblo de Hlubočepy (República Checa).\n\nEstas rocas no son las únicas en los alrededores de Hlubočep, hay al menos 4 lugares hermosos similares en las inmediaciones.\n\nTodas las imágenes del UAS se tomaron de acuerdo con la legislación aplicable.\n\n¡Drone en primer lugar!",
+      "ru": "Скалы Прокопа расположены недалеко от деревни Глубокепы (Чехия).\n\nЭти скалы не единственные в окрестностях Глубокепа, в непосредственной близости есть как минимум 4 подобных красивых места.\n\nВсе кадры с БПЛА были сняты в соответствии с действующим законодательством.\n\nДрон в первую очередь!"
+    },
+    "published": "2024-07-28T14:00:09+00:00"
+  },
+  {
+    "id": "guoyYtB2mck",
+    "title": "The Baltics 2024 with a drone in 4K",
+    "titles": {
+      "en": "The Baltics 2024 with a drone in 4K",
+      "cs": "Pobaltí 2024 s dronem ve 4K",
+      "pl": "Bałtyk 2024 z dronem w 4K",
+      "de": "Das Baltikum 2024 mit einer Drohne in 4K",
+      "es": "Los países bálticos 2024 con un dron en 4K",
+      "ru": "Прибалтика 2024 с дроном в 4К"
+    },
+    "descriptions": {
+      "en": "Immerse yourself in the bird's-eye view of the Baltics.\nRecords come from Lithuania, Latvia, Estonia and Finland.\n\nAll shots were filmed with an emphasis on safety and are filmed in accordance with the applicable legislation in the EU area. The footage does not capture restricted zones, but zones where take-off is permitted under certain conditions.\nDrone first",
+      "cs": "Ponořte se ze záběrů z Pobaltí z ptačí perspektivy.\nZáznamy pochází z Litvy, Lotyšska, Estonska a Finska.\n\nVšechny záběry byly natočeny s důrazem na bezpečnost a jsou natočené dle platné legislativy v EU prostoru. Záběry nezachycují zakázané zóny, ale zóny, kde lze vzlétnout za určitých podmínek.\nDron na prvním místě",
+      "pl": "Zanurz się w widoku Bałtyku z lotu ptaka.\nDane pochodzą z Litwy, Łotwy, Estonii i Finlandii.\n\nWszystkie ujęcia zostały nakręcone z naciskiem na bezpieczeństwo i są filmowane zgodnie z przepisami obowiązującymi na terenie UE. Materiał nie ukazuje stref zamkniętych, ale strefy, w których start jest dozwolony pod pewnymi warunkami.\nNajpierw dron",
+      "de": "Tauchen Sie ein in die Vogelperspektive auf das Baltikum.\nAufzeichnungen stammen aus Litauen, Lettland, Estland und Finnland.\n\nAlle Aufnahmen wurden unter dem Gesichtspunkt der Sicherheit gefilmt und werden in Übereinstimmung mit den geltenden Rechtsvorschriften im EU-Raum gedreht. Die Aufnahmen erfassen keine Sperrzonen, sondern Zonen, in denen der Start unter bestimmten Bedingungen erlaubt ist.\nDrohne zuerst",
+      "es": "Sumérgete en la vista aérea de los países bálticos.\nLos registros proceden de Lituania, Letonia, Estonia y Finlandia.\n\nTodas las tomas se filmaron poniendo énfasis en la seguridad y se filmaron de acuerdo con la legislación aplicable en el área de la UE. Las imágenes no capturan zonas restringidas, sino zonas donde se permite el despegue bajo ciertas condiciones.\nDron primero",
+      "ru": "Погрузитесь в Прибалтику с высоты птичьего полета.\nЗаписи поступают из Литвы, Латвии, Эстонии и Финляндии.\n\nВсе кадры были сняты с упором на безопасность и снимаются в соответствии с действующим законодательством на территории ЕС. На кадрах запечатлены не зоны запрета, а зоны, где взлет разрешен при определенных условиях.\nСначала дрон"
+    },
+    "published": ""
+  },
+  {
+    "id": "PhofvBWIEG0",
+    "title": "Kukułcze Skały from Szklarskiej Poręba in 4K",
+    "titles": {
+      "en": "Kukułcze Skały from Szklarskiej Poręba in 4K",
+      "cs": "Kukułcze Skały u Szklarske Poręby ve 4K",
+      "pl": "Kukułcze Skały koło Szklarskiej Poręby w 4K",
+      "de": "Kukułcze Skały aus Szklarskieja Poręba in 4K",
+      "es": "Kukułcze Skały cerca de Szklarske Poręba en 4K",
+      "ru": "Кукулче Скалы возле Шклярске Порембы в 4K"
+    },
+    "descriptions": {
+      "en": "The location is the Polish town of Szklarska Poręba and its surroundings.\n\nThe footage from the drone was taken in accordance with the applicable legislation.\n\nAs always the slogan at the end 'Drone first'!",
+      "cs": "Lokalitou je polské město Szklarska Poręba a okolí.\n\nZáběry z dronu byly pořízeny podle platné legislativy.\n\nJako vždy slogan na konec 'Dron na prvním místě'!",
+      "pl": "Lokalizacja to polskie miasto Szklarska Poręba i okolice.\n\nMateriał filmowy z drona został nagrany zgodnie z obowiązującymi przepisami.\n\nJak zawsze hasło na koniec „Najpierw dron”!",
+      "de": "Der Standort ist die polnische Stadt Szklarska Poręba und ihre Umgebung.\n\nDie Aufnahmen der Drohne wurden in Übereinstimmung mit den geltenden Rechtsvorschriften aufgenommen.\n\nWie immer der Slogan am Ende: „Drone first“!",
+      "es": "La ubicación es la ciudad polaca de Szklarska Poręba y sus alrededores.\n\nLas imágenes del dron se tomaron de acuerdo con la legislación aplicable.\n\nComo siempre el lema al final 'Drone first'!",
+      "ru": "Место действия — польский город Шклярска-Поремба и его окрестности.\n\nКадры с дрона были сняты в соответствии с действующим законодательством.\n\nКак всегда слоган в конце «Дрон прежде всего»!"
+    },
+    "published": ""
+  },
+  {
+    "id": "z3YBG6DlQK0",
+    "title": "Priessnitz spa from a drone view! [4K 60fps]",
+    "titles": {
+      "en": "Priessnitz spa from a drone view! [4K 60fps]",
+      "cs": "Priessnitzovy lázně z pohledu drona! [4K 60fps]",
+      "pl": "Spa Priessnitza z widoku z drona! [4K 60fps]",
+      "de": "Prießnitz-Therme aus der Drohnenansicht! [4K 60fps]",
+      "es": "¡El spa Priessnitz visto desde un dron! [4K 60fps]",
+      "ru": "Спа Присниц с высоты птичьего полета! [4К 60 кадров в секунду]"
+    },
+    "descriptions": {
+      "en": "The location is Priessnitz's healing spa Jeseník.\n\nThe footage from the drone was taken in accordance with the applicable legislation.\n\nAs always the slogan at the end 'Drone first'!",
+      "cs": "Lokalitou jsou Priessnitzovy léčebné lázně Jeseník.\n\nZáběry z dronu byly pořízeny podle platné legislativy.\n\nJako vždy slogan na konec 'Dron na prvním místě'!",
+      "pl": "Miejscowość to uzdrowisko Priessnitza Jeseník.\n\nMateriał filmowy z drona został nagrany zgodnie z obowiązującymi przepisami.\n\nJak zawsze hasło na koniec „Najpierw dron”!",
+      "de": "Der Standort ist das Heilbad Jeseník in Prießnitz.\n\nDie Aufnahmen der Drohne wurden in Übereinstimmung mit den geltenden Rechtsvorschriften aufgenommen.\n\nWie immer der Slogan am Ende: „Drone first“!",
+      "es": "El lugar es el spa curativo Jeseník de Priessnitz.\n\nLas imágenes del dron se tomaron de acuerdo con la legislación aplicable.\n\nComo siempre el lema al final 'Drone first'!",
+      "ru": "Местом действия является лечебный курорт Присница Есеник.\n\nКадры с дрона были сняты в соответствии с действующим законодательством.\n\nКак всегда слоган в конце «Дрон прежде всего»!"
+    },
+    "published": ""
+  },
+  {
+    "id": "1lVtLmojIn0",
+    "title": "Bird's eye view of Slapská Dam [4K 60fps]",
+    "titles": {
+      "en": "Bird's eye view of Slapská Dam [4K 60fps]",
+      "cs": "Slapská přehrada z ptačího pohledu [4K 60fps]",
+      "pl": "Widok z lotu ptaka na Zaporę Slapská [4K 60fps]",
+      "de": "Vogelperspektive der Slapská-Talsperre [4K 60fps]",
+      "es": "Vista aérea de la presa de Slapská [4K 60fps]",
+      "ru": "Вид на Слапсскую плотину с высоты птичьего полета [4K 60fps]"
+    },
+    "descriptions": {
+      "en": "The location is the Slapy Dam located on the Vltava River.\n\nAll footage was shot from a UAS in accordance with applicable legislation and with maximum possible safety.\n\nDrone in the first place!",
+      "cs": "Lokalitou je přehrada Slapy ležící na řece Vltava.\n\nVšechny záběry byly z UAS natočeny dle platné legislativy a s maximální možnou bezpečností.\n\nDron na prvním místě!",
+      "pl": "Miejscem akcji jest Zapora Slapy na Wełtawie.\n\nCały materiał filmowy został nakręcony z UAS zgodnie z obowiązującymi przepisami i przy maksymalnym możliwym bezpieczeństwie.\n\nPo pierwsze dron!",
+      "de": "Der Standort ist der Slapy-Staudamm an der Moldau.\n\nAlle Aufnahmen wurden von einem UAS aus gemäß den geltenden Gesetzen und mit größtmöglicher Sicherheit aufgenommen.\n\nDrohne an erster Stelle!",
+      "es": "La ubicación es la presa Slapy ubicada en el río Moldava.\n\nTodas las imágenes fueron filmadas desde un UAS de acuerdo con la legislación aplicable y con la máxima seguridad posible.\n\n¡Drone en primer lugar!",
+      "ru": "Место действия — плотина Слапы, расположенная на реке Влтава.\n\nВсе кадры были сняты с БПЛА в соответствии с действующим законодательством и с максимально возможной безопасностью.\n\nДрон в первую очередь!"
+    },
+    "published": ""
   }
 ];
 window.DRONATOR_SHORTS = [
