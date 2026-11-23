@@ -36,12 +36,6 @@ The website is a simple static showcase of the channel.
 
 The site is deployed automatically to GitHub Pages whenever changes are pushed to the main branch. The domain dronator.cz is pointed to GitHub through DNS records at Forpsi.
 
-## Development
-
-The website was built with the help of AI tools, based on the author's prompts and direction. All graphics, photographs and videos are created by the author.
-
-To preview locally, open index.html in a web browser.
-
 ## License
 
 Copyright © 2026 Dronator. All rights reserved. The content may not be copied or reused without written permission from the author. See the LICENSE file for details.
