@@ -286,7 +286,7 @@ window.DRONATOR_VIDEOS = [
     },
     "descriptions": {
       "en": "The location is Priessnitz's healing spa Jeseník.\n\nThe footage from the drone was taken in accordance with the applicable legislation.\n\nAs always the slogan at the end 'Drone first'!",
-      "cs": "The location is Priessnitz's healing spa Jeseník.\n\nThe footage from the drone was taken in accordance with the applicable legislation.\n\nAs always the slogan at the end 'Drone first'!",
+      "cs": "Lokalitou jsou Priessnitzovy léčebné lázně Jeseník.\n\nZáběry z dronu byly pořízeny podle platné legislativy.\n\nJako vždy slogan na konec 'Dron na prvním místě'!",
       "pl": "Miejscowość to uzdrowisko Priessnitza Jeseník.\n\nMateriał filmowy z drona został nagrany zgodnie z obowiązującymi przepisami.\n\nJak zawsze hasło na koniec „Najpierw dron”!",
       "de": "Der Standort ist das Heilbad Jeseník in Prießnitz.\n\nDie Aufnahmen der Drohne wurden in Übereinstimmung mit den geltenden Rechtsvorschriften aufgenommen.\n\nWie immer der Slogan am Ende: „Drone first“!",
       "es": "El lugar es el spa curativo Jeseník de Priessnitz.\n\nLas imágenes del dron se tomaron de acuerdo con la legislación aplicable.\n\nComo siempre el lema al final 'Drone first'!",
