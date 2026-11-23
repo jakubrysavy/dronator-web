@@ -17,7 +17,7 @@ window.DRONATOR_VIDEOS = [
       "pl": "Wyrusz ze mną w podróż przez Europę Środkową – z Czech przez Polskę aż na Słowację.\n\nW tym filmie zobaczysz krajobrazy, góry, jeziora, wsie i miasta z perspektywy ptaka. Od czeskich wzgórz i torfowisk, przez polskie Tatry i Zakopane, aż po słowacką Orawę i Wieliczną.\n\nTrzy kraje, trzy różne atmosfery – a jednocześnie wspólna piękna środkowej Europy.",
       "de": "Begleite mich auf einer Reise durch Mitteleuropa – von Tschechien über Polen bis in die Slowakei.\n\nIn diesem Video siehst du Landschaften, Berge, Seen, Dörfer und Städte aus der Vogelperspektive. Von tschechischen Hügeln und Mooren über die polnische Tatra und Zakopane bis zur slowakischen Orava und Velicna.\n\nDrei Länder, drei unterschiedliche Atmosphären – und doch eine gemeinsame Schönheit Mitteleuropas.",
       "es": "Acompáñame en un viaje por Europa Central: desde Chequia, pasando por Polonia, hasta Eslovaquia.\n\nEn este vídeo verás paisajes, montañas, lagos, pueblos y ciudades desde una perspectiva aérea. Desde las colinas y turberas checas, pasando por los Tatras polacos y Zakopane, hasta la región eslovaca de Orava y Velicna.\n\nTres países, tres atmósferas diferentes – y, aun así, una belleza compartida de Europa Central.",
-      "ru": "Отправляйтесь со мной в путешествие по Центральной Европе – из Чехии через Польшу в Словакию.\n\nВ этом видео вы увидите пейзажи, горы, озёра, деревни и города с высоты птичьего полёта. От чешских холмов и торфяников, через польские Татры и Закопане, до словацкой Оравы и Величны.\n\nТри страны, три разные атмосферы – и при этом общая красота Центральной Европы."
+      "ru": "Join me on a journey across Central Europe – from Czechia through Poland to Slovakia.\n\nIn this video, you’ll see landscapes, mountains, lakes, villages and towns from a bird’s-eye view. From Czech hills and peat bogs, through the Polish Tatra Mountains and Zakopane, to Slovakia’s Orava region and Velicna.\n\nThree countries, three different atmospheres – and yet one shared beauty of Central Europe."
     },
     "published": "2026-11-12T00:41:51+00:00"
   },
@@ -98,7 +98,7 @@ window.DRONATOR_VIDEOS = [
     "descriptions": {
       "en": "Vrchotovy Janovice is located in the southern part of the Central Bohemian Region. The town is home to the Vrchotovy Janovice Chateau. There are many ponds around the town.\n\nDrone in first place\n\n\nMusic by: bensound.com\nLicense code: XDQDMQUSRCN7QFNH",
       "cs": "Vrchotovy Janovice se nachází v jižní části Středočeského kraje. V malebném městysu se nachází Zámek Vrchotovy Janovice. V okolí městyse je spousta rybníků.\n\nDron na prvním místě\n\n\nMusic by: bensound.com\nLicense code: XDQDMQUSRCN7QFNH",
-      "pl": "Vrchotovy Janovice położone są w południowej części kraju środkowoczeskiego. Zamek Vrchotovy Janovice położony jest w malowniczym miasteczku. W okolicy miasta znajduje się wiele stawów.\n\nDron na pierwszym miejscu\n\n\nMusic by: bensound.com\nLicense code: XDQDMQUSRCN7QFNH",
+      "pl": "Vrchotovy Janovice is located in the southern part of the Central Bohemian Region. The town is home to the Vrchotovy Janovice Chateau. There are many ponds around the town.\n\nDrone in first place\n\n\nMusic by: bensound.com\nLicense code: XDQDMQUSRCN7QFNH",
       "de": "Vrchotovy Janovice liegt im südlichen Teil der Mittelböhmischen Region. In der malerischen Stadt befindet sich das Schloss Vrchotovy Janovice. Rund um die Stadt gibt es viele Teiche.\n\nDrohne auf Platz eins\n\n\nMusic by: bensound.com\nLicense code: XDQDMQUSRCN7QFNH",
       "es": "Vrchotovy Janovice se encuentra en la parte sur de la región de Bohemia Central. El castillo de Vrchotovy Janovice se encuentra en una pintoresca ciudad. Hay muchos estanques alrededor de la ciudad.\n\nDrone en primer lugar\n\n\nMusic by: bensound.com\nLicense code: XDQDMQUSRCN7QFNH",
       "ru": "Врхотовы Яновице расположены в южной части Среднечешского края. Замок Врхотовы Яновице расположен в живописном городе. Вокруг города много прудов.\n\nДрон на первом месте\n\n\nMusic by: bensound.com\nLicense code: XDQDMQUSRCN7QFNH"
@@ -416,8 +416,8 @@ window.DRONATOR_SHORTS = [
       "en": "Beautiful nature at a climatic spa resort in Czechia :-)",
       "cs": "Krásná příroda v klimatických lázní v Česku :-)",
       "pl": "Piękna przyroda w uzdrowisku klimatycznym w Czechach :-)",
-      "de": "Wunderschöne Natur im Kurort mit Heilklima in Tschechien :-)",
-      "es": "Hermosa naturaleza en un balneario climático en Chequia :-)",
+      "de": "Beautiful nature at a climatic spa resort in Czechia :-)",
+      "es": "Beautiful nature at a climatic spa resort in Czechia :-)",
       "ru": "Красивая природа в климатическом курорте в Чехии :-)"
     },
     "published": ""
@@ -434,12 +434,12 @@ window.DRONATOR_SHORTS = [
       "ru": "За кулисами - Балти-2024 и крушение дрона"
     },
     "descriptions": {
-      "en": "Beautiful shots from the Baltic coast - Lithuania, Latvia and Estonia.\nBut sometimes it doesn't work out and the drone ends up where it shouldn't.\n\nDrone in the first place! Dronator.cz!",
+      "en": "",
       "cs": "Krásné záběry z pobřeží Pobaltí - Litvy, Lotyšska a Estonska.\nHolt někdy se to nepovede a dron skončí tam, kde nemá.\n\nDron na prvním místě! Dronator.cz!",
-      "pl": "Piękne ujęcia z wybrzeża Bałtyku - Litwy, Łotwy i Estonii.\nCzasem jednak to nie wychodzi i dron ląduje tam, gdzie nie powinien.\n\nPo pierwsze dron! Dronator.cz!",
+      "pl": "",
       "de": "Wunderschöne Aufnahmen von der Küste des Baltikums: Litauen, Lettland und Estland.\nManchmal geht eben etwas schief, und die Drohne landet dort, wo sie nicht hingehört.\n\nDrohne zuerst! Dronator.cz!",
-      "es": "Hermosas fotografías de la costa báltica: Lituania, Letonia y Estonia.\nPero a veces no funciona y el dron acaba donde no debería.\n\n¡Drone en primer lugar! Dronator.cz!",
-      "ru": "Красивые кадры с побережья Балтийского моря – Литвы, Латвии и Эстонии.\nНо иногда не получается и дрон оказывается там, где не должен.\n\nДрон в первую очередь! Dronator.cz!"
+      "es": "",
+      "ru": ""
     },
     "published": ""
   }
