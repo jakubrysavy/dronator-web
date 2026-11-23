@@ -18,6 +18,8 @@ VIDEO_LIMIT = 15
 SHORT_LIMIT = 9
 LANGUAGES = ("en", "cs", "pl", "de", "es", "ru")
 LANGUAGE_REGIONS = {"en": "US", "cs": "CZ", "pl": "PL", "de": "DE", "es": "ES", "ru": "RU"}
+METADATA_RETRIES = 3
+METADATA_RETRY_DELAY = 1
 VIDEO_METADATA_CACHE = {}
 
 
@@ -103,25 +105,48 @@ def get_localized_video_metadata(video_id, language):
         },
     )
 
-    try:
-        time.sleep(0.25)
-        with urllib.request.urlopen(request, timeout=30) as response:
-            payload = response.read()
-            if response.headers.get("Content-Encoding") == "gzip":
-                payload = gzip.decompress(payload)
-        initial_data = get_initial_data(payload.decode("utf-8", errors="replace"))
+    metadata = {}
+    for attempt in range(METADATA_RETRIES + 1):
+        try:
+            time.sleep(0.25)
+            with urllib.request.urlopen(request, timeout=30) as response:
+                payload = response.read()
+                if response.headers.get("Content-Encoding") == "gzip":
+                    payload = gzip.decompress(payload)
+            initial_data = get_initial_data(payload.decode("utf-8", errors="replace"))
 
-        primary_info = find_renderer(initial_data, "videoPrimaryInfoRenderer")
-        secondary_info = find_renderer(initial_data, "videoSecondaryInfoRenderer")
-        title_data = primary_info.get("title", {})
-        title = title_data.get("simpleText") or "".join(
-            run.get("text", "") for run in title_data.get("runs", [])
+            primary_info = find_renderer(initial_data, "videoPrimaryInfoRenderer")
+            secondary_info = find_renderer(initial_data, "videoSecondaryInfoRenderer")
+            title_data = primary_info.get("title", {})
+            title = title_data.get("simpleText") or "".join(
+                run.get("text", "") for run in title_data.get("runs", [])
+            )
+            description = secondary_info.get("attributedDescription", {}).get("content", "")
+        except (OSError, ValueError, json.JSONDecodeError) as error:
+            print(f"Warning: YouTube {language} metadata unavailable for {video_id}: {error}", file=sys.stderr)
+            break
+
+        if title and title.strip():
+            metadata["title"] = title
+        if description and description.strip():
+            metadata["description"] = description
+
+        missing = [field for field in ("title", "description") if not metadata.get(field)]
+        if not missing:
+            break
+        if attempt == METADATA_RETRIES:
+            print(
+                f"Warning: YouTube {language} metadata missing for {video_id} after "
+                f"{attempt + 1} attempts: {', '.join(missing)}",
+                file=sys.stderr,
+            )
+            break
+        print(
+            f"Warning: YouTube {language} metadata missing for {video_id}: "
+            f"{', '.join(missing)}; retry {attempt + 1}/{METADATA_RETRIES}",
+            file=sys.stderr,
         )
-        description = secondary_info.get("attributedDescription", {}).get("content", "")
-        metadata = {"title": title, "description": description}
-    except (OSError, ValueError, json.JSONDecodeError) as error:
-        print(f"Warning: YouTube {language} metadata unavailable for {video_id}: {error}", file=sys.stderr)
-        metadata = {}
+        time.sleep(METADATA_RETRY_DELAY * (attempt + 1))
 
     VIDEO_METADATA_CACHE[cache_key] = metadata
     return metadata
