@@ -98,7 +98,7 @@ window.DRONATOR_VIDEOS = [
     "descriptions": {
       "en": "Vrchotovy Janovice is located in the southern part of the Central Bohemian Region. The town is home to the Vrchotovy Janovice Chateau. There are many ponds around the town.\n\nDrone in first place\n\n\nMusic by: bensound.com\nLicense code: XDQDMQUSRCN7QFNH",
       "cs": "Vrchotovy Janovice se nachází v jižní části Středočeského kraje. V malebném městysu se nachází Zámek Vrchotovy Janovice. V okolí městyse je spousta rybníků.\n\nDron na prvním místě\n\n\nMusic by: bensound.com\nLicense code: XDQDMQUSRCN7QFNH",
-      "pl": "Vrchotovy Janovice położone są w południowej części kraju środkowoczeskiego. Zamek Vrchotovy Janovice położony jest w malowniczym miasteczku. W okolicy miasta znajduje się wiele stawów.\n\nDron na pierwszym miejscu\n\n\nMusic by: bensound.com\nLicense code: XDQDMQUSRCN7QFNH",
+      "pl": "Vrchotovy Janovice is located in the southern part of the Central Bohemian Region. The town is home to the Vrchotovy Janovice Chateau. There are many ponds around the town.\n\nDrone in first place\n\n\nMusic by: bensound.com\nLicense code: XDQDMQUSRCN7QFNH",
       "de": "Vrchotovy Janovice liegt im südlichen Teil der Mittelböhmischen Region. In der malerischen Stadt befindet sich das Schloss Vrchotovy Janovice. Rund um die Stadt gibt es viele Teiche.\n\nDrohne auf Platz eins\n\n\nMusic by: bensound.com\nLicense code: XDQDMQUSRCN7QFNH",
       "es": "Vrchotovy Janovice se encuentra en la parte sur de la región de Bohemia Central. El castillo de Vrchotovy Janovice se encuentra en una pintoresca ciudad. Hay muchos estanques alrededor de la ciudad.\n\nDrone en primer lugar\n\n\nMusic by: bensound.com\nLicense code: XDQDMQUSRCN7QFNH",
       "ru": "Врхотовы Яновице расположены в южной части Среднечешского края. Замок Врхотовы Яновице расположен в живописном городе. Вокруг города много прудов.\n\nДрон на первом месте\n\n\nMusic by: bensound.com\nLicense code: XDQDMQUSRCN7QFNH"
@@ -350,7 +350,7 @@ window.DRONATOR_SHORTS = [
       "ru": "Остановитесь и взгляните на этот кадр из Малой Америки"
     },
     "descriptions": {
-      "en": "Malá Amerika quarry is located near Karlštejn in Czechia.",
+      "en": "Lom Malá Amerika se nachází poblíž Karlštejna v Česku.",
       "cs": "Lom Malá Amerika se nachází poblíž Karlštejna v Česku.",
       "pl": "Kamieniołom Malá Amerika znajduje się w pobliżu Karlštejna w Czechach.",
       "de": "Der Steinbruch Malá Amerika (Klein-Amerika) liegt in der Nähe von Karlštejn (Burg Karlstein) in Tschechien.",
