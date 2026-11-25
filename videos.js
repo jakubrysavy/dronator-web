@@ -434,7 +434,7 @@ window.DRONATOR_SHORTS = [
       "ru": "За кулисами - Балти-2024 и крушение дрона"
     },
     "descriptions": {
-      "en": "Beautiful shots from the Baltic coast - Lithuania, Latvia and Estonia.\nBut sometimes it doesn't work out and the drone ends up where it shouldn't.\n\nDrone in the first place! Dronator.cz!",
+      "en": "",
       "cs": "Krásné záběry z pobřeží Pobaltí - Litvy, Lotyšska a Estonska.\nHolt někdy se to nepovede a dron skončí tam, kde nemá.\n\nDron na prvním místě! Dronator.cz!",
       "pl": "Piękne ujęcia z wybrzeża Bałtyku - Litwy, Łotwy i Estonii.\nCzasem jednak to nie wychodzi i dron ląduje tam, gdzie nie powinien.\n\nPo pierwsze dron! Dronator.cz!",
       "de": "Wunderschöne Aufnahmen von der Küste des Baltikums: Litauen, Lettland und Estland.\nManchmal geht eben etwas schief, und die Drohne landet dort, wo sie nicht hingehört.\n\nDrohne zuerst! Dronator.cz!",
