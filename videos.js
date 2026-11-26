@@ -395,7 +395,7 @@ window.DRONATOR_SHORTS = [
       "en": "The coast of Latvia.",
       "cs": "Lotyšské pobřeží Lotyšska.",
       "pl": "Wybrzeże Łotwy.",
-      "de": "The coast of Latvia.",
+      "de": "Die Küste Lettlands.",
       "es": "La costa de Letonia.",
       "ru": "Побережье Латвии."
     },
