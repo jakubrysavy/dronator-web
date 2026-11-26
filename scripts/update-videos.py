@@ -4,6 +4,8 @@ import subprocess
 import sys
 import time
 import urllib.request
+import random
+import urllib.error
 import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 from pathlib import Path
@@ -18,9 +20,10 @@ VIDEO_LIMIT = 15
 SHORT_LIMIT = 9
 LANGUAGES = ("en", "cs", "pl", "de", "es", "ru")
 LANGUAGE_REGIONS = {"en": "US", "cs": "CZ", "pl": "PL", "de": "DE", "es": "ES", "ru": "RU"}
-METADATA_RETRIES = 3
+METADATA_RETRIES = 4
 METADATA_RETRY_DELAY = 1
 VIDEO_METADATA_CACHE = {}
+RETRYABLE_HTTP_CODES = {408, 429, 500, 502, 503, 504}
 
 
 class ScriptParser(HTMLParser):
@@ -100,13 +103,17 @@ def get_localized_video_metadata(video_id, language):
         f"https://www.youtube.com/watch?{query}",
         headers={
             "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
-            "Accept-Language": f"{language},{language};q=0.9,en;q=0.8",
+            "Accept-Language": f"{language}-{LANGUAGE_REGIONS[language]},{language};q=0.9,en;q=0.8",
             "Accept-Encoding": "gzip",
+            "Cookie": "CONSENT=YES+1; SOCS=CAI",
         },
     )
 
     metadata = {}
     for attempt in range(METADATA_RETRIES + 1):
+        error = None
+        retryable = True
+
         try:
             time.sleep(0.25)
             with urllib.request.urlopen(request, timeout=30) as response:
@@ -122,31 +129,46 @@ def get_localized_video_metadata(video_id, language):
                 run.get("text", "") for run in title_data.get("runs", [])
             )
             description = secondary_info.get("attributedDescription", {}).get("content", "")
-        except (OSError, ValueError, json.JSONDecodeError) as error:
-            print(f"Warning: YouTube {language} metadata unavailable for {video_id}: {error}", file=sys.stderr)
-            break
 
-        if title and title.strip():
-            metadata["title"] = title
-        if description and description.strip():
-            metadata["description"] = description
+            if title and title.strip():
+                metadata["title"] = title
+            if description and description.strip():
+                metadata["description"] = description
+        except urllib.error.HTTPError as exc:
+            error = f"HTTP {exc.code}"
+            retryable = exc.code in RETRYABLE_HTTP_CODES
+        except (OSError, EOFError, ValueError, json.JSONDecodeError) as exc:
+            # timeout, URLError, chyba gzipu, chybějící ytInitialData, nevalidní JSON
+            error = str(exc) or exc.__class__.__name__
 
         missing = [field for field in ("title", "description") if not metadata.get(field)]
-        if not missing:
+        if error is None and not missing:
             break
-        if attempt == METADATA_RETRIES:
+
+        reason = error or f"missing {', '.join(missing)}"
+
+        if not retryable:
             print(
-                f"Warning: YouTube {language} metadata missing for {video_id} after "
-                f"{attempt + 1} attempts: {', '.join(missing)}",
+                f"Warning: YouTube {language} metadata failed for {video_id}: {reason} (not retryable)",
                 file=sys.stderr,
             )
             break
+
+        if attempt == METADATA_RETRIES:
+            print(
+                f"Warning: YouTube {language} metadata failed for {video_id} after "
+                f"{attempt + 1} attempts: {reason}",
+                file=sys.stderr,
+            )
+            break
+
+        delay = METADATA_RETRY_DELAY * (2 ** attempt) + random.uniform(0, 0.5)
         print(
-            f"Warning: YouTube {language} metadata missing for {video_id}: "
-            f"{', '.join(missing)}; retry {attempt + 1}/{METADATA_RETRIES}",
+            f"Warning: YouTube {language} metadata problem for {video_id}: {reason}; "
+            f"retry {attempt + 1}/{METADATA_RETRIES} in {delay:.1f}s",
             file=sys.stderr,
         )
-        time.sleep(METADATA_RETRY_DELAY * (attempt + 1))
+        time.sleep(delay)
 
     VIDEO_METADATA_CACHE[cache_key] = metadata
     return metadata
